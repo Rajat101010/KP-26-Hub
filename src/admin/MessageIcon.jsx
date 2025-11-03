@@ -7,54 +7,34 @@ export default function MessageIcon() {
   const [showPopup, setShowPopup] = useState(false);
   const [hasNotification, setHasNotification] = useState(false);
 
-  // ✅ Safe notification trigger
-  const showSystemNotification = (msg) => {
-    try {
-      if (!("Notification" in window)) return; // not supported
-
-      if (Notification.permission === "granted") {
-        new Notification("📢 New Message from Admin", {
-          body: msg,
-          icon: "/favicon.ico", // change this if you want your app icon
-        });
-      } else if (Notification.permission !== "denied") {
-        Notification.requestPermission().then((perm) => {
-          if (perm === "granted") {
-            new Notification("📢 New Message from Admin", {
-              body: msg,
-              icon: "/favicon.ico",
-            });
-          }
-        });
-      }
-    } catch (err) {
-      console.error("Notification error:", err);
-    }
-  };
-
-  // 🔄 Load message safely
+  // ✅ Ask for notification permission once
   useEffect(() => {
-    try {
-      const savedMessage = localStorage.getItem("adminMessage");
-      const expiry = localStorage.getItem("adminMessageExpiry");
-      const lastNotified = localStorage.getItem("adminMessageNotifiedAt");
+    if ("Notification" in window) {
+      Notification.requestPermission().then((permission) => {
+        console.log("Notification permission:", permission);
+      });
+    }
+  }, []);
 
-      if (savedMessage && expiry && Date.now() < Number(expiry)) {
-        setMessage(savedMessage);
+  // 🔄 Load message from localStorage
+  useEffect(() => {
+    const savedMessage = localStorage.getItem("adminMessage");
+    const expiry = localStorage.getItem("adminMessageExpiry");
 
-        // show notification only if not shown before
-        if (!lastNotified || lastNotified !== savedMessage) {
-          setHasNotification(true);
-          showSystemNotification(savedMessage);
-          localStorage.setItem("adminMessageNotifiedAt", savedMessage);
-        }
-      } else {
-        localStorage.removeItem("adminMessage");
-        localStorage.removeItem("adminMessageExpiry");
-        localStorage.removeItem("adminMessageNotifiedAt");
+    if (savedMessage && expiry && Date.now() < Number(expiry)) {
+      setMessage(savedMessage);
+      setHasNotification(true);
+
+      // ✅ Show browser notification if new message
+      if ("Notification" in window && Notification.permission === "granted") {
+        new Notification("📢 New Message from Admin", {
+          body: savedMessage,
+          icon: "/favicon.ico", // optional, your site icon
+        });
       }
-    } catch (err) {
-      console.error("MessageIcon load error:", err);
+    } else {
+      localStorage.removeItem("adminMessage");
+      localStorage.removeItem("adminMessageExpiry");
     }
   }, []);
 
@@ -73,7 +53,7 @@ export default function MessageIcon() {
 
   return (
     <>
-      {/* 💌 Message Icon (fixed bottom-right) */}
+      {/* 💌 Message Icon */}
       <div className="message-icon-container" onClick={handleOpenPopup}>
         <span className="message-icon">
           {showPopup ? <FaRegEnvelopeOpen /> : <FaRegEnvelope />}
