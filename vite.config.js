@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
     Plugins: [react()],
-    base : process.env.VITE_BASE_PATH || "/Flavora"
+    base : process.env.VITE_BASE_PATH || "/KP-26-Hub"
 })
