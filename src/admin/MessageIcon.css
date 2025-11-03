@@ -1,0 +1,114 @@
+.message-icon-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1e1e1e;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fafad2;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transition: transform 0.2s ease;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-icon-container:hover {
+    transform: scale(1.1);
+}
+
+/* 🔴 Notification Dot */
+.notification-dot {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* 🪟 Popup Overlay */
+.message-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+/* 📩 Popup Box */
+.message-popup {
+    background-color: #1E1E1E;
+    border: 1px solid #fafad2;
+    border-radius: 10px;
+    padding: 20px 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+.message-popup h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.message-popup p {
+    font-size: 15px;
+    color: white;
+}
+
+/* ❌ Close Button */
+.close-popup-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-popup-btn:hover {
+    color: red;
+}
+
+/* ✨ Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.message-icon {
+    font-size: 26px;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.message-icon-container:hover .message-icon {
+    transform: scale(1.2);
+}

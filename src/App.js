@@ -27,6 +27,7 @@ import InfoBus from './pages_bus/info_bus';
 
 import Admin from "./admin/Admin";
 import { ActiveDaysProvider } from "./admin/ActiveDaysContext";
+import MessageIcon from "./admin/MessageIcon";
 
 function App() {
   const day = dayjs().format("dddd").toLowerCase();
@@ -58,6 +59,7 @@ function App() {
             <Route path="/admin" element={<Admin />} />
           </Routes>
         </Router>
+        <MessageIcon />
       </ActiveDaysProvider>
     </main>
   );
