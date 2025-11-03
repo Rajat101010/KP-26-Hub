@@ -83,7 +83,7 @@ export default function Admin() {
                 {/* 📢 Admin message box */}
                 <div className="admin-message-section">
                     <h3>📢 Send Message (Active for 2 hours)</h3>
-
+                    <br />
                     <div className="admin-message-box">
                         <textarea
                             className="admin-message-input"

@@ -118,7 +118,7 @@
 }
 
 .admin-back-btn {
-    background-color: #2c2c2c;
+    background-color: #b8860b;
     color: #fff;
     border: 1px solid #fafad2;
     padding: 10px 20px;
@@ -129,7 +129,7 @@
 }
 
 .admin-back-btn:hover {
-    background-color: #3d3d3d;
+    background-color: #C0A000;
     transform: scale(1.05);
 }
 
