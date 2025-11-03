@@ -8,6 +8,8 @@ import { c_25Buses } from "./nav_c_25_content";
 import { c_15Buses } from "./nav_c_15_7_8_content";
 import { c_3Buses } from "./nav_c_3_content";
 
+import { useActiveDays } from "../../admin/ActiveDaysContext";
+
 function NowActiveBuses() {
     const now = new Date();
     const day = now.getDay(); // 0 = Sunday, 6 = Saturday
@@ -24,13 +26,16 @@ function NowActiveBuses() {
     ];
 
     // ✅ If weekend, show message only (don’t calculate buses)
-    if (day === 0 || day === 6) {
+
+    const { activeDays } = useActiveDays();
+    const todayName = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"][day];
+
+    if (!activeDays[todayName]) {
         return (
             <main>
                 <center style={{ marginTop: "60px" }}>
                     <font className="font_menu_description">
-                        🚫 Bus services are inactive on weekends
-                        <br />(Saturday & Sunday)
+                        🚫 Bus services are inactive on {todayName.charAt(0).toUpperCase() + todayName.slice(1)}
                     </font>
                 </center>
             </main>

@@ -1,45 +1,131 @@
-.admin-container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0f0f0f;
+/* ===== Admin.css ===== */
+
+.admin-password-container {
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-.admin-box {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-  text-align: center;
-  color: white;
-  width: 300px;
+.admin-password-box {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    position: relative;
+    width: 300px;
+    text-align: center;
+}
+
+.admin-heading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
 .admin-input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-  margin-bottom: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    outline: none;
+    background-color: #222;
+    color: white;
+    margin-bottom: 12px;
 }
 
-.admin-button {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: none;
-  background: #1e90ff;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
+.admin-btn {
+    width: 90%;
+    padding: 8px;
+    background-color: #b8860b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.admin-button:hover {
-  background: #3aa6ff;
+.admin-btn:hover {
+    background-color: #C0A000;
+}
+
+.admin-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.admin-cancelled {
+    height: 100vh;
+    background-color: #111;
+    color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.admin-container {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: white;
+    background-color: #111;
+    min-height: 100vh;
+}
+
+.admin-subtitle {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.admin-days-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-day-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #1e1e1e;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    transition: 0.2s;
+}
+
+.admin-day-item:hover {
+    background-color: #2a2a2a;
+}
+
+
+.admin-back-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.admin-back-btn {
+    background-color: #2c2c2c;
+    color: #fff;
+    border: 1px solid #fafad2;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.admin-back-btn:hover {
+    background-color: #3d3d3d;
+    transform: scale(1.05);
 }

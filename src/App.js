@@ -26,35 +26,39 @@ import C3 from './pages_bus/c_3';
 import InfoBus from './pages_bus/info_bus';
 
 import Admin from "./admin/Admin";
+import { ActiveDaysProvider } from "./admin/ActiveDaysContext";
 
 function App() {
   const day = dayjs().format("dddd").toLowerCase();
 
   return (
     <main style={{ backgroundColor: "#121212", height: "auto", minHeight: '100vh', color: "white" }}>
-      <Router>
-        <Routes>
-          <Route path="/day" element={<Navigate to={`/${day}`} />} />
 
-          <Route path='/' element={<Now />} />
-          <Route path='/info' element={<Info />} />
-          <Route path='/monday' element={<Monday />} />
-          <Route path='/tuesday' element={<Tuesday />} />
-          <Route path='/wednesday' element={<Wednesday />} />
-          <Route path='/thursday' element={<Thursday />} />
-          <Route path='/friday' element={<Friday />} />
-          <Route path='/saturday' element={<Saturday />} />
-          <Route path='/sunday' element={<Sunday />} />
+      <ActiveDaysProvider>
+        <Router>
+          <Routes>
+            <Route path="/day" element={<Navigate to={`/${day}`} />} />
 
-          <Route path='/info-bus' element={<InfoBus />} />
-          <Route path='/bus-now' element={<Now />} />
-          <Route path='/bus-c_25' element={<C25 />} />
-          <Route path='/bus-c_15_7_8' element={<C15 />} />
-          <Route path='/bus-c_3' element={<C3 />} />
+            <Route path='/' element={<Now />} />
+            <Route path='/info' element={<Info />} />
+            <Route path='/monday' element={<Monday />} />
+            <Route path='/tuesday' element={<Tuesday />} />
+            <Route path='/wednesday' element={<Wednesday />} />
+            <Route path='/thursday' element={<Thursday />} />
+            <Route path='/friday' element={<Friday />} />
+            <Route path='/saturday' element={<Saturday />} />
+            <Route path='/sunday' element={<Sunday />} />
 
-          <Route path="/admin" element={<Admin />} />
-        </Routes>
-      </Router>
+            <Route path='/info-bus' element={<InfoBus />} />
+            <Route path='/bus-now' element={<Now />} />
+            <Route path='/bus-c_25' element={<C25 />} />
+            <Route path='/bus-c_15_7_8' element={<C15 />} />
+            <Route path='/bus-c_3' element={<C3 />} />
+
+            <Route path="/admin" element={<Admin />} />
+          </Routes>
+        </Router>
+      </ActiveDaysProvider>
     </main>
   );
 }

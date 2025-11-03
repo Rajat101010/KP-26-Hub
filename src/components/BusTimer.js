@@ -1,6 +1,8 @@
 // BusTimer.jsx
 import { useEffect, useState } from "react";
 
+import { useActiveDays } from "../admin/ActiveDaysContext";
+
 export default function BusTimer({ departureTime, day }) {
   const [timeDiff, setTimeDiff] = useState(0);
   const [status, setStatus] = useState(""); // "upcoming" | "departed" | "idle"
@@ -39,8 +41,11 @@ export default function BusTimer({ departureTime, day }) {
   const today = daysOfWeek[new Date().getDay()].toLowerCase();
   const activeDay = day ? day.toLowerCase() : null;
 
-  // 🚫 Hide timer on Saturday & Sunday
-  if (today === "saturday" || today === "sunday") return null;
+  // inside component
+  const { activeDays } = useActiveDays();
+
+  // 🚫 Hide timer on inactive days
+  if (!activeDays[today]) return null;
 
   // If a specific day is set and it's not today, hide it
   if (activeDay && today !== activeDay) return null;
