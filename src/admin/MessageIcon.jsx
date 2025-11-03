@@ -7,18 +7,54 @@ export default function MessageIcon() {
   const [showPopup, setShowPopup] = useState(false);
   const [hasNotification, setHasNotification] = useState(false);
 
-  // 🔄 Load message from localStorage
-  useEffect(() => {
-    const savedMessage = localStorage.getItem("adminMessage");
-    const expiry = localStorage.getItem("adminMessageExpiry");
+  // ✅ Safe notification trigger
+  const showSystemNotification = (msg) => {
+    try {
+      if (!("Notification" in window)) return; // not supported
 
-    if (savedMessage && expiry && Date.now() < Number(expiry)) {
-      setMessage(savedMessage);
-      setHasNotification(true);
-    } else {
-      // Remove expired message
-      localStorage.removeItem("adminMessage");
-      localStorage.removeItem("adminMessageExpiry");
+      if (Notification.permission === "granted") {
+        new Notification("📢 New Message from Admin", {
+          body: msg,
+          icon: "/favicon.ico", // change this if you want your app icon
+        });
+      } else if (Notification.permission !== "denied") {
+        Notification.requestPermission().then((perm) => {
+          if (perm === "granted") {
+            new Notification("📢 New Message from Admin", {
+              body: msg,
+              icon: "/favicon.ico",
+            });
+          }
+        });
+      }
+    } catch (err) {
+      console.error("Notification error:", err);
+    }
+  };
+
+  // 🔄 Load message safely
+  useEffect(() => {
+    try {
+      const savedMessage = localStorage.getItem("adminMessage");
+      const expiry = localStorage.getItem("adminMessageExpiry");
+      const lastNotified = localStorage.getItem("adminMessageNotifiedAt");
+
+      if (savedMessage && expiry && Date.now() < Number(expiry)) {
+        setMessage(savedMessage);
+
+        // show notification only if not shown before
+        if (!lastNotified || lastNotified !== savedMessage) {
+          setHasNotification(true);
+          showSystemNotification(savedMessage);
+          localStorage.setItem("adminMessageNotifiedAt", savedMessage);
+        }
+      } else {
+        localStorage.removeItem("adminMessage");
+        localStorage.removeItem("adminMessageExpiry");
+        localStorage.removeItem("adminMessageNotifiedAt");
+      }
+    } catch (err) {
+      console.error("MessageIcon load error:", err);
     }
   }, []);
 
