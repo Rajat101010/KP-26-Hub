@@ -7,46 +7,47 @@ export default function MessageIcon() {
   const [showPopup, setShowPopup] = useState(false);
   const [hasNotification, setHasNotification] = useState(false);
 
-  // ✅ Ask for notification permission (safely)
+  // ✅ Request permission safely
   useEffect(() => {
     if (typeof window !== "undefined" && "Notification" in window) {
-      try {
-        Notification.requestPermission().then((permission) => {
-          console.log("Notification permission:", permission);
-        });
-      } catch (err) {
-        console.warn("Notification permission request failed:", err);
-      }
+      Notification.requestPermission().then((perm) =>
+        console.log("Notification permission:", perm)
+      );
     }
   }, []);
 
-  // 🔄 Load message and trigger notification
+  // 🔄 Load message & trigger notification once
   useEffect(() => {
-    try {
-      const savedMessage = localStorage.getItem("adminMessage");
-      const expiry = localStorage.getItem("adminMessageExpiry");
+    const savedMessage = localStorage.getItem("adminMessage");
+    const expiry = localStorage.getItem("adminMessageExpiry");
+    const notified = localStorage.getItem("adminMessageNotified");
 
-      if (savedMessage && expiry && Date.now() < Number(expiry)) {
-        setMessage(savedMessage);
-        setHasNotification(true);
+    if (savedMessage && expiry && Date.now() < Number(expiry)) {
+      setMessage(savedMessage);
+      setHasNotification(true);
 
-        // ✅ Only send notification if allowed
-        if (
-          typeof window !== "undefined" &&
-          "Notification" in window &&
-          Notification.permission === "granted"
-        ) {
+      if (
+        "Notification" in window &&
+        Notification.permission === "granted" &&
+        !notified
+      ) {
+        try {
           new Notification("📢 New Message from Admin", {
             body: savedMessage,
             icon: "/favicon.ico",
           });
+          localStorage.setItem("adminMessageNotified", "true");
+          console.log("Notification sent successfully ✅");
+        } catch (err) {
+          console.warn("Notification failed ❌", err);
         }
       } else {
-        localStorage.removeItem("adminMessage");
-        localStorage.removeItem("adminMessageExpiry");
+        console.log("Notification skipped (already sent or permission not granted)");
       }
-    } catch (err) {
-      console.warn("Error loading message:", err);
+    } else {
+      localStorage.removeItem("adminMessage");
+      localStorage.removeItem("adminMessageExpiry");
+      localStorage.removeItem("adminMessageNotified");
     }
   }, []);
 
