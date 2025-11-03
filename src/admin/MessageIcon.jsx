@@ -7,34 +7,46 @@ export default function MessageIcon() {
   const [showPopup, setShowPopup] = useState(false);
   const [hasNotification, setHasNotification] = useState(false);
 
-  // ✅ Ask for notification permission once
+  // ✅ Ask for notification permission (safely)
   useEffect(() => {
-    if ("Notification" in window) {
-      Notification.requestPermission().then((permission) => {
-        console.log("Notification permission:", permission);
-      });
+    if (typeof window !== "undefined" && "Notification" in window) {
+      try {
+        Notification.requestPermission().then((permission) => {
+          console.log("Notification permission:", permission);
+        });
+      } catch (err) {
+        console.warn("Notification permission request failed:", err);
+      }
     }
   }, []);
 
-  // 🔄 Load message from localStorage
+  // 🔄 Load message and trigger notification
   useEffect(() => {
-    const savedMessage = localStorage.getItem("adminMessage");
-    const expiry = localStorage.getItem("adminMessageExpiry");
+    try {
+      const savedMessage = localStorage.getItem("adminMessage");
+      const expiry = localStorage.getItem("adminMessageExpiry");
 
-    if (savedMessage && expiry && Date.now() < Number(expiry)) {
-      setMessage(savedMessage);
-      setHasNotification(true);
+      if (savedMessage && expiry && Date.now() < Number(expiry)) {
+        setMessage(savedMessage);
+        setHasNotification(true);
 
-      // ✅ Show browser notification if new message
-      if ("Notification" in window && Notification.permission === "granted") {
-        new Notification("📢 New Message from Admin", {
-          body: savedMessage,
-          icon: "/favicon.ico", // optional, your site icon
-        });
+        // ✅ Only send notification if allowed
+        if (
+          typeof window !== "undefined" &&
+          "Notification" in window &&
+          Notification.permission === "granted"
+        ) {
+          new Notification("📢 New Message from Admin", {
+            body: savedMessage,
+            icon: "/favicon.ico",
+          });
+        }
+      } else {
+        localStorage.removeItem("adminMessage");
+        localStorage.removeItem("adminMessageExpiry");
       }
-    } else {
-      localStorage.removeItem("adminMessage");
-      localStorage.removeItem("adminMessageExpiry");
+    } catch (err) {
+      console.warn("Error loading message:", err);
     }
   }, []);
 
@@ -47,9 +59,7 @@ export default function MessageIcon() {
     }
   };
 
-  const handleClosePopup = () => {
-    setShowPopup(false);
-  };
+  const handleClosePopup = () => setShowPopup(false);
 
   return (
     <>
@@ -58,7 +68,9 @@ export default function MessageIcon() {
         <span className="message-icon">
           {showPopup ? <FaRegEnvelopeOpen /> : <FaRegEnvelope />}
         </span>
-        {hasNotification && !showPopup && <span className="notification-dot"></span>}
+        {hasNotification && !showPopup && (
+          <span className="notification-dot"></span>
+        )}
       </div>
 
       {/* 🪟 Message Popup */}
