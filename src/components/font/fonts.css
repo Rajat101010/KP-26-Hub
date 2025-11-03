@@ -3,6 +3,11 @@
     font-size: 2rem;
 }
 
+.font_app_name a{
+    text-decoration: none;
+    color: white;
+}
+
 .font_hostel_name {
     color: #fafad2;
     font-weight: 100;

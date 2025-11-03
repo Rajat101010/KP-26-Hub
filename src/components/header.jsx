@@ -7,7 +7,9 @@ function Header() {
       <div className="header_top_for_all_pages">
         <div className='header_title_text'>
           <font className='font_app_name'>
-            Flavora
+            <a href="/admin">
+              KP-26 Hub
+            </a>
           </font>
         </div>
         <div className='header_title_text'>

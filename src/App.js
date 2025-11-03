@@ -25,6 +25,8 @@ import C3 from './pages_bus/c_3';
 
 import InfoBus from './pages_bus/info_bus';
 
+import Admin from "./admin/Admin";
+
 function App() {
   const day = dayjs().format("dddd").toLowerCase();
 
@@ -49,6 +51,8 @@ function App() {
           <Route path='/bus-c_25' element={<C25 />} />
           <Route path='/bus-c_15_7_8' element={<C15 />} />
           <Route path='/bus-c_3' element={<C3 />} />
+
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </Router>
     </main>
