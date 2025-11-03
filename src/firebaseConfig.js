@@ -1,6 +1,7 @@
 // src/firebaseConfig.js
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getMessaging, getToken, onMessage } from "firebase/messaging";
 
 // ⚠️ Replace these values with your Firebase console values
 const firebaseConfig = {
@@ -18,3 +19,4 @@ const app = initializeApp(firebaseConfig);
 
 // ✅ Initialize Firestore
 export const db = getFirestore(app);
+export const messaging = getMessaging(app);
