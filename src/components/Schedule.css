@@ -1,0 +1,17 @@
+.time-slot {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #B0B0B0;
+  transition: all 0.3s ease;
+}
+
+.blinking {
+  color: #ffd700;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.4;
+  }
+}

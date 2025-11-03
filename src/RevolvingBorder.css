@@ -1,0 +1,54 @@
+.revolving-border {
+    position: relative;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    background: #111;
+    overflow: hidden;
+}
+
+.revolving-border:hover{
+    color: grey;
+}
+
+@media(max-width: 768px){
+    .revolving-border {
+        padding: 0.7rem;
+    }
+}
+
+/* Animated circular border */
+.revolving-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 3px;
+    /* border thickness */
+    background: conic-gradient(from 0deg,
+            white,
+            transparent,
+            white,
+            transparent,
+            white);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: spin 2s linear infinite;
+}
+
+/* Animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

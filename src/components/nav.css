@@ -1,0 +1,123 @@
+.nav_parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media(max-width: 768px) {
+    .nav_parent {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 8px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.nav_parent_bus {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media(max-width: 768px) {
+    .nav_parent_bus {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 8px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.nav_div1,
+.nav_div2,
+.nav_div3,
+.nav_div4,
+.nav_div5,
+.nav_div6,
+.nav_div7 {
+    border: 1px solid #fafad2;
+    border-radius: 5px;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    background-color: #2C2C2C;
+}
+
+.nav_div1_bus,
+.nav_div2_bus,
+.nav_div3_bus,
+.nav_div4_bus{
+    border: 1px solid #fafad2;
+    border-radius: 5px;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    background-color: #2C2C2C;
+}
+
+.nav_div1:hover {
+    background-color: #3A3A3A;
+}
+
+.nav_div2:hover {
+    background-color: #3A3A3A;
+}
+
+.nav_div3:hover {
+    background-color: #3A3A3A;
+}
+
+.nav_div4:hover {
+    background-color: #3A3A3A;
+}
+
+.nav_div5:hover {
+    background-color: #3A3A3A;
+}
+
+.nav_div6:hover {
+    background-color: #3A3A3A;
+}
+
+.nav_div7:hover {
+    background-color: #3A3A3A;
+}
+
+
+.nav_div1_bus:hover {
+    background-color: #3A3A3A;
+}
+
+.nav_div2_bus:hover {
+    background-color: #3A3A3A;
+}
+
+.nav_div3_bus:hover {
+    background-color: #3A3A3A;
+}
+
+.nav_div4_bus:hover {
+    background-color: #3A3A3A;
+}
+
+.active {
+    background-color: #b8860b;
+}
+
+.hr_for_all_Pages {
+    height: 1px;
+    border: 1px solid #fafad2;
+}
+
+.weel_links {
+    text-decoration: none;
+    color: white;
+}
