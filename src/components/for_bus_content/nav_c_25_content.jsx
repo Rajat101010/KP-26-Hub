@@ -3,26 +3,26 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import BusTimer from "../BusTimer";
 
 export const c_25Buses = [
-    { id: 1, from: "H", to: "C 25", time: { h: 7, m: 40 }, busNo: "15" },
-    { id: 2, from: "H", to: "C 25", time: { h: 8, m: 40 }, busNo: "32" },
+    { id: 1, from: "H", to: "C 25", time: { h: 7, m: 35 }, busNo: "15" },
+    { id: 2, from: "H", to: "C 25", time: { h: 8, m: 35 }, busNo: "32" },
     { id: 3, from: "C 25", to: "H", time: { h: 9, m: 0 }, busNo: "32" },
     { id: 4, from: "H", to: "C 25", time: { h: 9, m: 20 }, busNo: "15" },
-    { id: 5, from: "H", to: "C 25", time: { h: 9, m: 40 }, busNo: "32" },
-    { id: 6, from: "H", to: "C 25", time: { h: 10, m: 40 }, busNo: "72" },
+    { id: 5, from: "H", to: "C 25", time: { h: 9, m: 35 }, busNo: "32" },
+    { id: 6, from: "H", to: "C 25", time: { h: 10, m: 35 }, busNo: "72" },
     { id: 7, from: "C 25", to: "H", time: { h: 11, m: 10 }, busNo: "15" },
-    { id: 8, from: "H", to: "C 25", time: { h: 11, m: 40 }, busNo: "15" },
+    { id: 8, from: "H", to: "C 25", time: { h: 11, m: 35 }, busNo: "15" },
     { id: 9, from: "C 25", to: "H", time: { h: 12, m: 10 }, busNo: "32" },
-    { id: 10, from: "H", to: "C 25", time: { h: 12, m: 40 }, busNo: "32" },
+    { id: 10, from: "H", to: "C 25", time: { h: 12, m: 35 }, busNo: "32" },
     { id: 11, from: "C 25", to: "H", time: { h: 13, m: 10 }, busNo: "32" },
-    { id: 12, from: "H", to: "C 25", time: { h: 13, m: 40 }, busNo: "15" },
-    { id: 13, from: "H", to: "C 25", time: { h: 13, m: 40 }, busNo: "72" },
+    { id: 12, from: "H", to: "C 25", time: { h: 13, m: 35 }, busNo: "15" },
+    { id: 13, from: "H", to: "C 25", time: { h: 13, m: 35 }, busNo: "72" },
     { id: 14, from: "C 25", to: "H", time: { h: 14, m: 10 }, busNo: "15" },
     { id: 15, from: "C 25", to: "H", time: { h: 14, m: 10 }, busNo: "72" },
-    { id: 16, from: "H", to: "C 25", time: { h: 14, m: 40 }, busNo: "72" },
-    { id: 17, from: "H", to: "C 25", time: { h: 14, m: 40 }, busNo: "15" },
+    { id: 16, from: "H", to: "C 25", time: { h: 14, m: 35 }, busNo: "72" },
+    { id: 17, from: "H", to: "C 25", time: { h: 14, m: 35 }, busNo: "15" },
     { id: 18, from: "H", to: "C 25", time: { h: 14, m: 50 }, busNo: "32" },
     { id: 19, from: "C 25", to: "H", time: { h: 17, m: 25 }, busNo: "72" },
-    { id: 20, from: "C 25", to: "H", time: { h: 17, m: 30 }, busNo: "32" },
+    { id: 20, from: "C 25", to: "H", time: { h: 17, m: 25 }, busNo: "32" },
 ];
 
 function C25Content() {

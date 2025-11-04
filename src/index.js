@@ -35,7 +35,7 @@ async function requestNotificationPermission() {
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", async () => {
     try {
-      const registration = await navigator.serviceWorker.register("/firebase-messaging-sw.js");
+      const registration = await navigator.serviceWorker.register("/firebase-messaging-sw-v2.js");
       console.log("✅ Service Worker registered successfully:", registration);
       await requestNotificationPermission();
     } catch (error) {

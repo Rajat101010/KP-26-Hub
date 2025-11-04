@@ -3,17 +3,18 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import BusTimer from "../BusTimer";
 
 export const c_3Buses = [
-    { id: 1, from: "H", to: "C 3", time: { h: 8, m: 40 }, busNo: "Mini" },
+    { id: 1, from: "H", to: "C 3", time: { h: 8, m: 35 }, busNo: "Mini" },
     { id: 2, from: "C 3", to: "H", time: { h: 9, m: 10 }, busNo: "Mini" },
-    { id: 3, from: "H", to: "C 3, 15", time: { h: 9, m: 45 }, busNo: "Mini" },
-    { id: 4, from: "C 3", to: "H", time: { h: 10, m: 10 }, busNo: "Mini" },
-    { id: 5, from: "H", to: "C 3", time: { h: 13, m: 50 }, busNo: "Mini" },
-    { id: 6, from: "C 3", to: "H", time: { h: 14, m: 10 }, busNo: "Mini" },
+    { id: 3, from: "H", to: "C 3", time: { h: 13, m: 50 }, busNo: "Mini" },
+    { id: 4, from: "C 3", to: "H", time: { h: 14, m: 10 }, busNo: "Mini" },
     { id: 5, from: "H", to: "C 3", time: { h: 15, m: 0 }, busNo: "Mini" },
     { id: 6, from: "C 3", to: "H", time: { h: 16, m: 15 }, busNo: "Mini" },
     { id: 7, from: "C 3", to: "H", time: { h: 16, m: 20 }, busNo: "32" },
     { id: 8, from: "H", to: "C 3", time: { h: 17, m: 40 }, busNo: "Mini" },
     { id: 9, from: "C 3", to: "H", time: { h: 18, m: 15 }, busNo: "Mini" },
+
+
+    
 ];
 
 function C25Content() {
