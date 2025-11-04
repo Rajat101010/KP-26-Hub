@@ -24,7 +24,7 @@ export const c_15Buses = [
     
 ];
 
-function C25Content() {
+function C15Content() {
     return (
         <main>
             <center>
@@ -82,4 +82,4 @@ function C25Content() {
     );
 }
 
-export default C25Content;
+export default C15Content;

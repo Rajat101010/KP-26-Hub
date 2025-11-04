@@ -7,6 +7,7 @@ import BusTimer from "../BusTimer";
 import { c_25Buses } from "./nav_c_25_content";
 import { c_15Buses } from "./nav_c_15_7_8_content";
 import { c_3Buses } from "./nav_c_3_content";
+import { special_bus } from "./special_bus";
 
 import { useActiveDays } from "../../admin/ActiveDaysContext";
 
@@ -23,6 +24,7 @@ function NowActiveBuses() {
         ...(c_25Buses || []).map((b) => ({ ...b, campus: "C 25" })),
         ...(c_15Buses || []).map((b) => ({ ...b, campus: "C 15" })),
         ...(c_3Buses || []).map((b) => ({ ...b, campus: "C 3" })),
+        ...(special_bus || []).map((b) => ({ ...b, campus: "SP B" })),
     ];
 
     // ✅ If weekend, show message only (don’t calculate buses)
