@@ -6,19 +6,20 @@ export const c_15Buses = [
     { id: 1, from: "H", to: "C 15, 7, 8", time: { h: 7, m: 35 }, busNo: "22" },
     { id: 2, from: "C 15, 7, 8", to: "H", time: { h: 8, m: 10 }, busNo: "22" },
     { id: 3, from: "H", to: "C 15, 7, 8", time: { h: 8, m: 35 }, busNo: "22" },
-    { id: 4, from: "H", to: "C 15, 3", time: { h: 9, m: 40 }, busNo: "Mini" },
+    { id: 4, from: "H", to: "C 15", time: { h: 9, m: 40 }, busNo: "Mini" },
     { id: 5, from: "C 15, 7, 8", to: "H", time: { h: 10, m: 0 }, busNo: "22" },
-    { id: 6, from: "C 15, 3", to: "H", time: { h: 10, m: 10 }, busNo: "Mini" },
+    { id: 6, from: "C 15", to: "H", time: { h: 10, m: 10 }, busNo: "Mini" },
     { id: 7, from: "H", to: "C 15, 7, 8", time: { h: 10, m: 35 }, busNo: "22" },
     { id: 8, from: "H", to: "C 15, 7, 8", time: { h: 10, m: 40 }, busNo: "Mini" },
     { id: 9, from: "C 15, 7, 8", to: "H", time: { h: 12, m: 30 }, busNo: "22" },
-    { id: 10, from: "C 15, 3", to: "H", time: { h: 12, m: 35 }, busNo: "Mini" },
+    { id: 10, from: "C 15", to: "H", time: { h: 12, m: 35 }, busNo: "Mini" },
     { id: 11, from: "H", to: "C 15, 7, 8", time: { h: 12, m: 50 }, busNo: "Mini" },
     { id: 12, from: "C 7, 8", to: "H", time: { h: 13, m: 30 }, busNo: "Mini" },
     { id: 13, from: "H", to: "C 15, 7, 8", time: { h: 14, m: 20 }, busNo: "22" },
     { id: 14, from: "C 7, 8", to: "H", time: { h: 15, m: 30 }, busNo: "22" },
     { id: 15, from: "H", to: "C 15, 7, 8", time: { h: 16, m: 0 }, busNo: "22" },
     { id: 16, from: "C 15, 7, 8", to: "H", time: { h: 16, m: 40 }, busNo: "22" },
+    
 
     
 ];

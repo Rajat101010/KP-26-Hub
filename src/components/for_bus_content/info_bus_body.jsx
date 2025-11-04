@@ -102,6 +102,25 @@ function InfoBusBody() {
                             </div>
                         </div>
                     </motion.div>
+                    <motion.div
+                        initial={{ y: 200, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        exit={{ y: -200, opacity: 0 }}
+                        transition={{ duration: 1, ease: "easeInOut" }}
+                    >
+                        <div className="info_body_div1_bus">
+                            <div>
+                                <font className='font_info_title_name'>
+                                    Reception
+                                </font>
+                            </div>
+                            <div>
+                                <font className='font_info_description'>
+                                    +91 8114377672
+                                </font>
+                            </div>
+                        </div>
+                    </motion.div>
                 </div>
             </center>
         </main>
