@@ -3,7 +3,7 @@ import { createContext, useContext, useState, useEffect } from "react";
 const ActiveDaysContext = createContext();
 
 export const ActiveDaysProvider = ({ children }) => {
-  // Load from localStorage or use default
+  // Load saved data from localStorage (if exists)
   const [activeDays, setActiveDays] = useState(() => {
     const saved = localStorage.getItem("activeDays");
     return saved
@@ -14,21 +14,30 @@ export const ActiveDaysProvider = ({ children }) => {
           wednesday: true,
           thursday: true,
           friday: true,
-          saturday: false,
-          sunday: false,
+          saturday: true,  // ✅ always active by default
+          sunday: true,    // ✅ always active by default
         };
   });
 
-  // Save changes to localStorage automatically
+  // Whenever admin toggles something, save to localStorage
   useEffect(() => {
     localStorage.setItem("activeDays", JSON.stringify(activeDays));
   }, [activeDays]);
 
+  // Function for toggling days (used by admin)
+  const toggleDay = (day) => {
+    setActiveDays((prev) => ({
+      ...prev,
+      [day]: !prev[day],
+    }));
+  };
+
   return (
-    <ActiveDaysContext.Provider value={{ activeDays, setActiveDays }}>
+    <ActiveDaysContext.Provider value={{ activeDays, toggleDay, setActiveDays }}>
       {children}
     </ActiveDaysContext.Provider>
   );
 };
 
+// Hook for using active days anywhere (user or admin)
 export const useActiveDays = () => useContext(ActiveDaysContext);
