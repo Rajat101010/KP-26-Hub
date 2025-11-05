@@ -14,8 +14,8 @@ export const ActiveDaysProvider = ({ children }) => {
           wednesday: true,
           thursday: true,
           friday: true,
-          saturday: false,
-          sunday: false,
+          saturday: true,
+          sunday: true,
         };
   });
 
