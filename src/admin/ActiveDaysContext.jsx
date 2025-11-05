@@ -1,41 +1,31 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { db } from "../firebaseConfig"; // your firebase config
-import { doc, getDoc, onSnapshot, updateDoc } from "firebase/firestore";
 
 const ActiveDaysContext = createContext();
 
 export const ActiveDaysProvider = ({ children }) => {
-  const [activeDays, setActiveDays] = useState({
-    monday: true,
-    tuesday: true,
-    wednesday: true,
-    thursday: true,
-    friday: true,
-    saturday: false,
-    sunday: false,
+  // Load from localStorage or use default
+  const [activeDays, setActiveDays] = useState(() => {
+    const saved = localStorage.getItem("activeDays");
+    return saved
+      ? JSON.parse(saved)
+      : {
+          monday: true,
+          tuesday: true,
+          wednesday: true,
+          thursday: true,
+          friday: true,
+          saturday: false,
+          sunday: false,
+        };
   });
 
+  // Save changes to localStorage automatically
   useEffect(() => {
-    const docRef = doc(db, "settings", "activeDays");
-
-    // Real-time sync: listens for admin updates
-    const unsubscribe = onSnapshot(docRef, (docSnap) => {
-      if (docSnap.exists()) {
-        setActiveDays(docSnap.data());
-      }
-    });
-
-    return () => unsubscribe();
-  }, []);
-
-  // Optional: if you want admin to update it
-  const updateActiveDays = async (newDays) => {
-    const docRef = doc(db, "settings", "activeDays");
-    await updateDoc(docRef, newDays);
-  };
+    localStorage.setItem("activeDays", JSON.stringify(activeDays));
+  }, [activeDays]);
 
   return (
-    <ActiveDaysContext.Provider value={{ activeDays, setActiveDays: updateActiveDays }}>
+    <ActiveDaysContext.Provider value={{ activeDays, setActiveDays }}>
       {children}
     </ActiveDaysContext.Provider>
   );
