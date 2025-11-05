@@ -13,18 +13,10 @@ import { useActiveDays } from "../../admin/ActiveDaysContext";
 
 function NowActiveBuses() {
   const now = new Date();
-  const day = now.getDay(); // 0 = Sunday, 6 = Saturday
+  const day = now.getDay();
 
   const [fromFilter, setFromFilter] = useState("");
   const [toFilter, setToFilter] = useState("");
-
-  // Combine all buses
-  const allBuses = [
-    ...(c_25Buses || []).map((b) => ({ ...b, campus: "C 25" })),
-    ...(c_15Buses || []).map((b) => ({ ...b, campus: "C 15" })),
-    ...(c_3Buses || []).map((b) => ({ ...b, campus: "C 3" })),
-    ...(special_bus || []).map((b) => ({ ...b, campus: "SP B" })),
-  ];
 
   const { activeDays } = useActiveDays();
   const todayName = [
@@ -37,11 +29,8 @@ function NowActiveBuses() {
     "saturday",
   ][day];
 
-  // ✅ Saturday and Sunday are always active
-  const isWeekend = todayName === "saturday" || todayName === "sunday";
-  const isActiveToday = isWeekend || activeDays[todayName];
-
-  if (!isActiveToday) {
+  // ✅ If bus inactive for today, show message
+  if (!activeDays[todayName]) {
     return (
       <main>
         <center style={{ marginTop: "60px" }}>
@@ -54,7 +43,13 @@ function NowActiveBuses() {
     );
   }
 
-  // ✅ Filter buses for current time
+  const allBuses = [
+    ...(c_25Buses || []).map((b) => ({ ...b, campus: "C 25" })),
+    ...(c_15Buses || []).map((b) => ({ ...b, campus: "C 15" })),
+    ...(c_3Buses || []).map((b) => ({ ...b, campus: "C 3" })),
+    ...(special_bus || []).map((b) => ({ ...b, campus: "SP B" })),
+  ];
+
   const activeBuses = allBuses.filter((bus) => {
     const t = new Date();
     t.setHours(bus.time.h, bus.time.m, 0, 0);
@@ -74,7 +69,6 @@ function NowActiveBuses() {
   return (
     <main>
       <center>
-        {/* 🔽 Dropdown Filters */}
         <div
           style={{
             marginBottom: "20px",
@@ -128,7 +122,6 @@ function NowActiveBuses() {
           </select>
         </div>
 
-        {/* 🚍 Active Bus Display */}
         <div className="menu_parent">
           {filteredBuses.length > 0 ? (
             filteredBuses.map((bus) => {

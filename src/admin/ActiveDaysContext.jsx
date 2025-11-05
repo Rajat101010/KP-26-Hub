@@ -3,41 +3,44 @@ import { createContext, useContext, useState, useEffect } from "react";
 const ActiveDaysContext = createContext();
 
 export const ActiveDaysProvider = ({ children }) => {
-  // Load saved data from localStorage (if exists)
-  const [activeDays, setActiveDays] = useState(() => {
-    const saved = localStorage.getItem("activeDays");
-    return saved
-      ? JSON.parse(saved)
-      : {
-          monday: true,
-          tuesday: true,
-          wednesday: true,
-          thursday: true,
-          friday: true,
-          saturday: true,  // ✅ always active by default
-          sunday: true,    // ✅ always active by default
-        };
+  const [activeDays, setActiveDays] = useState({
+    monday: true,
+    tuesday: true,
+    wednesday: true,
+    thursday: true,
+    friday: true,
+    saturday: false,
+    sunday: false,
   });
 
-  // Whenever admin toggles something, save to localStorage
-  useEffect(() => {
-    localStorage.setItem("activeDays", JSON.stringify(activeDays));
-  }, [activeDays]);
+  // ✅ Load from shared JSON file so all users get same data
+  const loadActiveDays = async () => {
+    try {
+      const res = await fetch("/activeDays.json?timestamp=" + Date.now());
+      const data = await res.json();
+      setActiveDays(data);
+    } catch (error) {
+      console.warn("Could not load activeDays.json:", error);
+    }
+  };
 
-  // Function for toggling days (used by admin)
-  const toggleDay = (day) => {
-    setActiveDays((prev) => ({
-      ...prev,
-      [day]: !prev[day],
-    }));
+  useEffect(() => {
+    loadActiveDays();
+    // Auto refresh every 30 seconds to get admin changes
+    const interval = setInterval(loadActiveDays, 30000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // ✅ For admin: update (local update only, JSON overwrite must be manual or via API)
+  const updateActiveDays = (newDays) => {
+    setActiveDays(newDays);
   };
 
   return (
-    <ActiveDaysContext.Provider value={{ activeDays, toggleDay, setActiveDays }}>
+    <ActiveDaysContext.Provider value={{ activeDays, setActiveDays: updateActiveDays }}>
       {children}
     </ActiveDaysContext.Provider>
   );
 };
 
-// Hook for using active days anywhere (user or admin)
 export const useActiveDays = () => useContext(ActiveDaysContext);
