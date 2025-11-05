@@ -26,29 +26,21 @@ function NowActiveBuses() {
   const [fromFilter, setFromFilter] = useState("");
   const [toFilter, setToFilter] = useState("");
 
-  // ✅ combine all buses
-  const allBuses = [
+  // ✅ separate regular buses and special buses
+  const regularBuses = [
     ...(c_25Buses || []).map((b) => ({ ...b, campus: "C 25" })),
     ...(c_15Buses || []).map((b) => ({ ...b, campus: "C 15" })),
     ...(c_3Buses || []).map((b) => ({ ...b, campus: "C 3" })),
+  ];
+
+  const todayBuses = activeDaysConfig[todayName] ? regularBuses : [];
+
+  const allBuses = [
+    ...todayBuses,
     ...(special_bus || []).map((b) => ({ ...b, campus: "SP B" })),
   ];
 
-  // ✅ check if buses active today
-  if (!activeDaysConfig[todayName]) {
-    return (
-      <main>
-        <center style={{ marginTop: "60px" }}>
-          <font className="font_menu_description">
-            🚫 Bus services are inactive on{" "}
-            {todayName.charAt(0).toUpperCase() + todayName.slice(1)}
-          </font>
-        </center>
-      </main>
-    );
-  }
-
-  // ✅ filter active buses
+  // ✅ filter active buses based on time
   const activeBuses = allBuses.filter((bus) => {
     const t = new Date();
     t.setHours(bus.time.h, bus.time.m, 0, 0);
