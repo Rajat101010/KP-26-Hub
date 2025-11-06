@@ -1,8 +1,8 @@
 import { BiInfoSquare } from "react-icons/bi";
-import { IoFastFood } from "react-icons/io5";
-import { PiWashingMachine } from "react-icons/pi";
+import { FaBusAlt } from "react-icons/fa";
+import { PiWashingMachineFill } from "react-icons/pi";
 
-function HeaderBus() {
+function Header() {
   return (
     <main>
       <div className="header_top_for_all_pages">
@@ -14,9 +14,9 @@ function HeaderBus() {
           </font>
         </div>
         <div className='header_title_text'>
-          <a href="/day">
+          <a href="/bus-now">
             <div className="revolving-border">
-              <IoFastFood />
+              <FaBusAlt />
             </div>
           </a>
         </div>
@@ -28,18 +28,13 @@ function HeaderBus() {
           </font>
           <br />
           <font className='font_mess_menu'>
-            Bus Details
+            Washing Machine
           </font>
         </div>
         <div className='header_second_div2'>
-          <a href="/info-bus">
-            <font className='font_info_icon'>
-              <BiInfoSquare />
-            </font>
-          </a>
           <a href="/washing-machine">
             <font className='font_info_icon'>
-              <PiWashingMachine />
+              <PiWashingMachineFill />
             </font>
           </a>
         </div>
@@ -48,4 +43,4 @@ function HeaderBus() {
   );
 }
 
-export default HeaderBus;
+export default Header;

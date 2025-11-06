@@ -1,5 +1,6 @@
-import { IoMdInformationCircleOutline } from "react-icons/io";
+import { BiInfoSquare } from "react-icons/bi";
 import { FaBusAlt } from "react-icons/fa";
+import { PiWashingMachine } from "react-icons/pi";
 
 function Header() {
   return (
@@ -33,7 +34,12 @@ function Header() {
         <div className='header_second_div2'>
           <a href="/info">
             <font className='font_info_icon'>
-              <IoMdInformationCircleOutline />
+              <BiInfoSquare />
+            </font>
+          </a>
+          <a href="/washing-machine">
+            <font className='font_info_icon'>
+              <PiWashingMachine />
             </font>
           </a>
         </div>

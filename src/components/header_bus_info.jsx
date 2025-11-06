@@ -1,5 +1,6 @@
-import { IoMdInformationCircle } from "react-icons/io";
+import { BiSolidInfoSquare } from "react-icons/bi";
 import { IoFastFood } from "react-icons/io5";
+import { PiWashingMachine } from "react-icons/pi";
 
 function HeaderBus() {
   return (
@@ -33,7 +34,12 @@ function HeaderBus() {
         <div className='header_second_div2'>
           <a href="/info-bus">
             <font className='font_info_icon'>
-              <IoMdInformationCircle />
+              <BiSolidInfoSquare />
+            </font>
+          </a>
+          <a href="/washing-machine">
+            <font className='font_info_icon'>
+              <PiWashingMachine />
             </font>
           </a>
         </div>

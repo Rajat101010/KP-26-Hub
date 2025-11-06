@@ -4,7 +4,7 @@ export const activeDaysConfig = {
   sunday: false,
   monday: true,
   tuesday: true,
-  wednesday: false,
+  wednesday: true,
   thursday: true,
   friday: true,
   saturday: false,

@@ -12,7 +12,7 @@ import '../components/info_body.css'
 import Footer from '../components/footer';
 import '../components/footer.css'
 
-function Home() {
+function Info() {
   return (
     <main>
       <div>
@@ -29,4 +29,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Info;

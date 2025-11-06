@@ -25,6 +25,8 @@ import C3 from './pages_bus/c_3';
 
 import InfoBus from './pages_bus/info_bus';
 
+import WachingMachine from './components/washing_machine/washing_machine_page';
+
 import Admin from "./admin/Admin";
 import { ActiveDaysProvider } from "./admin/ActiveDaysContext";
 import MessageIcon from "./admin/MessageIcon";
@@ -57,6 +59,8 @@ function App() {
             <Route path='/bus-c_3' element={<C3 />} />
 
             <Route path="/admin" element={<Admin />} />
+
+            <Route path="/washing-machine" element={<WachingMachine />} />
           </Routes>
         </Router>
         <MessageIcon />
