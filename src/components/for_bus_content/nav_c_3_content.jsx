@@ -14,9 +14,6 @@ export const c_3Buses = [
     { id: 9, from: "C 3", to: "H", time: { h: 16, m: 20 }, busNo: "32" },
     { id: 10, from: "H", to: "C 3", time: { h: 17, m: 50 }, busNo: "Mini" },
     { id: 11, from: "C 3", to: "H", time: { h: 18, m: 15 }, busNo: "Mini" },
-
-
-    
 ];
 
 function C3Content() {

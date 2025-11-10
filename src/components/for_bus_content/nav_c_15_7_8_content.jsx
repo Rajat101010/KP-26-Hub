@@ -18,9 +18,6 @@ export const c_15Buses = [
     { id: 13, from: "C 7", to: "H", time: { h: 15, m: 30 }, busNo: "21" },
     { id: 14, from: "H", to: "C 15, 7, 8", time: { h: 16, m: 0 }, busNo: "21" },
     { id: 15, from: "C 15, 7, 8", to: "H", time: { h: 16, m: 40 }, busNo: "21" },
-    
-
-    
 ];
 
 function C15Content() {
