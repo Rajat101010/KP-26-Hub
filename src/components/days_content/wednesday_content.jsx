@@ -90,7 +90,7 @@ function WednesdayContent() {
                             </div>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
-                                    <Schedule dayIndex={2} timeSlots={Snacks} />
+                                    <Schedule dayIndex={3} timeSlots={Snacks} />
                                 </font>
                             </div>
                             <div className="menu_sub_part_div3">
