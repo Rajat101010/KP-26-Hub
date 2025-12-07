@@ -25,7 +25,7 @@ function FooterHostel() {
                         </center>
                     </div>
                 </a>
-                <a href="/day">
+                <a href="/days">
                     <div className='footer_items'>
                         <center>
                             <IoFastFoodOutline size={20} className='footer_all_item' />

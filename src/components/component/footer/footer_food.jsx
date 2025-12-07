@@ -25,7 +25,7 @@ function FooterFood() {
                         </center>
                     </div>
                 </a>
-                <a href="/day">
+                <a href="/days">
                     <div className='footer_items'>
                         <center>
                             <IoFastFood size={20} className='footer_all_item footer_active_item' />

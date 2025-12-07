@@ -34,7 +34,7 @@ import Update from './main_pages/pages/update_pages/update';
 
 
 function App() {
-  const day = dayjs().format("dddd").toLowerCase();
+  const days = dayjs().format("dddd").toLowerCase();
 
   return (
     <main style={{ backgroundColor: "#121212", height: "auto", minHeight: '100vh', color: "white" }}>
@@ -44,7 +44,7 @@ function App() {
           <Route path='/' element={<BusNow />} />
           <Route path='/bus-all' element={<BusAll />} />
 
-          <Route path="/day" element={<Navigate to={`/${day}`} />} />
+          <Route path="/days" element={<Navigate to={`/${days}`} />} />
           <Route path='/sunday' element={<Sunday />} />
           <Route path='/monday' element={<Monday />} />
           <Route path='/tuesday' element={<Tuesday />} />
