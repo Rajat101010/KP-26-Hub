@@ -1,35 +1,37 @@
 import './App.css';
-
-import './components/font/fonts.css'
-import "./RevolvingBorder.css";
-
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import dayjs from "dayjs";
 
-import Home from './pages/home';
-import Info from './pages/info';
+//routers(page changing)
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
-import Monday from './pages/monday';
-import Tuesday from './pages/tuesday';
-import Wednesday from './pages/wednesday';
-import Thursday from './pages/thursday';
-import Friday from './pages/friday';
-import Saturday from './pages/saturday';
-import Sunday from './pages/sunday';
+//assets
+import './assets/fonts.css';
 
-import Now from './pages_bus/now';
-import C25 from './pages_bus/c_25';
-import C15 from './pages_bus/c_15_7_8';
-import C3 from './pages_bus/c_3';
+//bus-pages
+import BusNow from './main_pages/pages/bus_pages/bus_now';
+import BusAll from './main_pages/pages/bus_pages/bus_all';
 
-import InfoBus from './pages_bus/info_bus';
+//food-day-pages
+import Sunday from './main_pages/pages/food_pages/sunday';
+import Monday from './main_pages/pages/food_pages/monday';
+import Tuesday from './main_pages/pages/food_pages/tuesday';
+import Wednesday from './main_pages/pages/food_pages/wednesday';
+import Thursday from './main_pages/pages/food_pages/thursday';
+import Friday from './main_pages/pages/food_pages/friday';
+import Saturday from './main_pages/pages/food_pages/saturday';
 
-import WachingMachine from './components/washing_machine/washing_machine_page';
+//info-pages
+import Contact from './main_pages/pages/info_pages/contact';
+import FoodInfo from './main_pages/pages/info_pages/food_info';
+import WashingMachine from './main_pages/pages/info_pages/washing_m';
 
-import Admin from "./admin/Admin";
-import { ActiveDaysProvider } from "./admin/ActiveDaysContext";
-import MessageIcon from "./admin/MessageIcon";
+//hostel-pages
+import Hostel from './main_pages/pages/hostel_pages/hostel';
+
+//update-pages
+import Update from './main_pages/pages/update_pages/update';
+
 
 function App() {
   const day = dayjs().format("dddd").toLowerCase();
@@ -37,34 +39,30 @@ function App() {
   return (
     <main style={{ backgroundColor: "#121212", height: "auto", minHeight: '100vh', color: "white" }}>
 
-      <ActiveDaysProvider>
-        <Router>
-          <Routes>
-            <Route path="/day" element={<Navigate to={`/${day}`} />} />
+      <Router>
+        <Routes>
+          <Route path='/' element={<BusNow />} />
+          <Route path='/bus-all' element={<BusAll />} />
 
-            <Route path='/' element={<Now />} />
-            <Route path='/info' element={<Info />} />
-            <Route path='/monday' element={<Monday />} />
-            <Route path='/tuesday' element={<Tuesday />} />
-            <Route path='/wednesday' element={<Wednesday />} />
-            <Route path='/thursday' element={<Thursday />} />
-            <Route path='/friday' element={<Friday />} />
-            <Route path='/saturday' element={<Saturday />} />
-            <Route path='/sunday' element={<Sunday />} />
+          <Route path="/day" element={<Navigate to={`/${day}`} />} />
+          <Route path='/sunday' element={<Sunday />} />
+          <Route path='/monday' element={<Monday />} />
+          <Route path='/tuesday' element={<Tuesday />} />
+          <Route path='/wednesday' element={<Wednesday />} />
+          <Route path='/thursday' element={<Thursday />} />
+          <Route path='/friday' element={<Friday />} />
+          <Route path='/saturday' element={<Saturday />} />
 
-            <Route path='/info-bus' element={<InfoBus />} />
-            <Route path='/bus-now' element={<Now />} />
-            <Route path='/bus-c_25' element={<C25 />} />
-            <Route path='/bus-c_15_7_8' element={<C15 />} />
-            <Route path='/bus-c_3' element={<C3 />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/food-info' element={<FoodInfo />} />
+          <Route path='/washing-machine' element={<WashingMachine />} />
 
-            <Route path="/admin" element={<Admin />} />
+          <Route path='/hostel' element={<Hostel />} />
 
-            <Route path="/washing-machine" element={<WachingMachine />} />
-          </Routes>
-        </Router>
-        <MessageIcon />
-      </ActiveDaysProvider>
+          <Route path='/update' element={<Update />} />
+        </Routes>
+      </Router>
+
     </main>
   );
 }

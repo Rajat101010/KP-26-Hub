@@ -1,56 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { MessageProvider } from "./admin/MessageContext";
-import { getToken } from "firebase/messaging";
-import { messaging } from "./firebaseConfig"; // ✅ make sure this is exported in firebaseConfig.js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-// 🔑 Request notification permission and get FCM token
-async function requestNotificationPermission() {
-  try {
-    const permission = await Notification.requestPermission();
-    if (permission === "granted") {
-      console.log("✅ Notification permission granted.");
-
-      const token = await getToken(messaging, {
-        vapidKey: "BE1ary4vXqIF7U0PJKNXgaxZyKEvFcI-KBp1zKgHVOI6JHfz2nvNGvUBv3NyIuuIQmixpRbsEbZAII4zLmRrPfI", // 🔹 Replace this with your Firebase Console Web Push Key
-      });
-
-      if (token) {
-        console.log("📩 FCM Token:", token);
-      } else {
-        console.warn("⚠️ No registration token available. Request permission again.");
-      }
-    } else {
-      console.warn("🚫 Notification permission denied.");
-    }
-  } catch (error) {
-    console.error("❌ Error getting FCM token:", error);
-  }
-}
-
-// 🧠 Register Service Worker
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", async () => {
-    try {
-      const registration = await navigator.serviceWorker.register("/firebase-messaging-sw-v2.js");
-      console.log("✅ Service Worker registered successfully:", registration);
-      await requestNotificationPermission();
-    } catch (error) {
-      console.error("❌ Service Worker registration failed:", error);
-    }
-  });
-}
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MessageProvider>
-      <App />
-    </MessageProvider>
+    <App />
   </React.StrictMode>
 );
 
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

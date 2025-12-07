@@ -1,0 +1,152 @@
+.font_for_app_name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+@media(max-width: 768px) {
+    .font_for_app_name {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+.font_for_app_name_menu {
+    font-size: 1.8rem;
+    color: white;
+}
+
+@media(max-width: 768px) {
+    .font_for_app_name_menu {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+.font_for_hostel_name {
+    color: #fafad2;
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+@media(max-width: 768px) {
+    .font_for_hostel_name {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+.font_for_header_title {
+    color: #B0B0B0;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+@media(max-width: 768px) {
+    .font_for_header_title {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+.footer_item_font {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+}
+
+.footer_item_font_active {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+.page_nav_font {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+.page_nav_font_active {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+
+.font_menu_title_name {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.font_menu_time {
+    color: #B0B0B0;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.font_menu_description {
+    color: #B0B0B0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media(max-width: 768px) {
+    .font_menu_description {
+        font-size: 0.8rem;
+    }
+}
+
+.font_info_description {
+    color: #B0B0B0;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+
+
+.share_the_qr_font {
+    font-size: 1.3rem;
+}
+
+
+.font_for_hostel_name_hostel {
+    color: #fafad2;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.font_for_header_title_hostel {
+    color: #B0B0B0;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.font_hostel_description {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+.font_bus_no {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media(max-width: 768px) {
+    .font_bus_no {
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,94 @@
+.center_box {
+
+    position: fixed;   /* stays centered regardless of scrolling */
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;   /* or set specific width */
+    height: auto;  /* or set specific height */
+}
+
+
+.kiit_logo {
+    height: 10rem;
+}
+
+@media(max-width: 768px) {
+    .kiit_logo {
+        height: 7rem;
+    }
+}
+
+.hostel_social_links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 3rem;
+}
+
+.social_logos {
+    padding: 0.5rem;
+    border: 2px solid #fafad2;
+    color: #fafad2;
+    border-radius: 50%;
+}
+
+.social_logos:hover{
+    color:bisque;
+    border: 2px solid bisque;
+}
+
+.share_the_app {
+    margin-top: 3rem;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 0.3rem;
+    width: 180px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.share_the_app:hover{
+    border: 2px solid #fafad2;
+    box-shadow: 0px 0px 10px #fafad2;
+    cursor: pointer;
+}
+
+.hostel_app_descriotion {
+    margin-top: 3rem;
+    width: 50%;
+}
+
+@media(max-width: 768px) {
+    .hostel_app_descriotion {
+        width: 90%;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+}
+
+.popup_image {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    border-radius: 10px;
+}
+
+@media(max-width: 768px){
+    .popup_image {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+}

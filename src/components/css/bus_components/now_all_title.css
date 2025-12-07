@@ -1,0 +1,32 @@
+.now_all_title_parent {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.now_all_title_all {
+    border: 1px solid #fafad2;
+    background-color: #1E1E1E;
+    width: 200px;
+    border-radius: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .now_all_title_all {
+        width: 120px;
+    }
+}
+
+.now_all_title_active{
+    background-color: #4A432C;
+}
+
+.now_all_title_all:hover{
+    background-color: #332D1C;
+    cursor: pointer;
+}

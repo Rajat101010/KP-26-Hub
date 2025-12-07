@@ -1,0 +1,29 @@
+.bus_number_section {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.bus_number {
+    margin-left: 0.5rem;
+    background-color: #b8860b;
+    padding: 0.2rem;
+    padding-top: 0.1rem;
+    border-radius: 3px;
+}
+
+.drop_down_menu {
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #fafad2;
+    background-color: #2C2C2C;
+    font-size: 14px;
+    outline: none;
+    width: 30%;
+}
+
+@media(max-width: 768px) {
+    .drop_down_menu {
+        width: 50%;
+    }
+}
