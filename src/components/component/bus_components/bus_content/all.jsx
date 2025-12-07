@@ -58,23 +58,34 @@ export const allBusesCam = [
 function AllBusContent() {
     const [selectedCampus, setSelectedCampus] = useState("");
 
-    const campuses = [...new Set(allBusesCam.flatMap((bus) => [bus.from, bus.to]))];
+    // Extract all unique campus names except H
+    const campuses = [
+        ...new Set(
+            allBusesCam.flatMap((bus) => {
+                const all = [...bus.from.split(","), ...bus.to.split(",")].map((c) => c.trim());
+                return all.filter((c) => c.startsWith("C")); // ignore H
+            })
+        ),
+    ];
 
+    // Format campus names like Campus 25
     const campusNames = campuses.reduce((acc, campus) => {
-        if (campus === "H") acc[campus] = "All Campus";
-        else acc[campus] = campus.replace("C ", "Campus ");
+        acc[campus] = "Campus " + campus.replace("C", "").trim();
         return acc;
     }, {});
 
+    // Filter buses: match campus inside comma-separated values
     const filteredBuses = selectedCampus
         ? allBusesCam
-            .filter((bus) => bus.from === selectedCampus || bus.to === selectedCampus)
-            .sort((a, b) => {
-                // Convert time to minutes for comparison
-                const timeA = a.time.h * 60 + a.time.m;
-                const timeB = b.time.h * 60 + b.time.m;
-                return timeA - timeB;
-            })
+              .filter((bus) => {
+                  const fromList = bus.from.split(",").map((c) => c.trim());
+                  const toList = bus.to.split(",").map((c) => c.trim());
+                  return (
+                      fromList.includes(selectedCampus) ||
+                      toList.includes(selectedCampus)
+                  );
+              })
+              .sort((a, b) => a.time.h * 60 + a.time.m - (b.time.h * 60 + b.time.m))
         : [];
 
     return (
@@ -123,7 +134,9 @@ function AllBusContent() {
                                         </div>
                                         <div className="menu_sub_part_div2">
                                             <font className="font_menu_time">
-                                                {`${bus.time.h.toString().padStart(2, "0")}:${bus.time.m
+                                                {`${bus.time.h
+                                                    .toString()
+                                                    .padStart(2, "0")}:${bus.time.m
                                                     .toString()
                                                     .padStart(2, "0")}`}
                                             </font>
