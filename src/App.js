@@ -37,7 +37,7 @@ function App() {
   const days = dayjs().format("dddd").toLowerCase();
 
   return (
-    <main style={{ backgroundColor: "#121212", height: "auto", minHeight: '100vh', color: "white" }}>
+    <main style={{ backgroundColor: "#121212", height: "auto", minHeight: '90vh', color: "white" }}>
 
       <Router>
         <Routes>
