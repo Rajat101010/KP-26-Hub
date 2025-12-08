@@ -23,7 +23,7 @@ function UpdateContent() {
             title: "Attendance",
             description: "Give your biometric attendance between 8:00 PM and 11:00 PM",
             active: true,
-            startTime: "08:00 AM",
+            startTime: "08:00 PM",
             endTime: "11:00 PM",
         },
         {
