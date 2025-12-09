@@ -42,7 +42,7 @@ function HostelContent() {
                         <a href="tel:+918114377672" className="call_link">
                             <IoCall size={25} className='social_logos' />
                         </a>
-                        <a href="https://maps.app.goo.gl/1SD92VGYQcU5U2yn8?g_st=ac">
+                        <a href="https://maps.app.goo.gl/qMbkLsJYdyygw8tR8">
                             <FaLocationDot size={25} className='social_logos' />
                         </a>
                         <a href="mailto:kingpalace.26@kiit.ac.in">
