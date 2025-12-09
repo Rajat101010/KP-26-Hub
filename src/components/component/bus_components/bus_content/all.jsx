@@ -33,10 +33,9 @@ export const allBusesCam = [
     { id: 31, from: "H", to: "C 3", time: { h: 8, m: 35 }, busNo: "Mini" },
     { id: 32, from: "H", to: "C 3", time: { h: 9, m: 40 }, busNo: "Mini" },
     { id: 33, from: "H", to: "C 3", time: { h: 10, m: 40 }, busNo: "Mini" },
-    { id: 34, from: "C 3", to: "H", time: { h: 13, m: 10 }, busNo: "22" },
-    { id: 35, from: "C 3", to: "H", time: { h: 14, m: 10 }, busNo: "32" },
-    { id: 36, from: "H", to: "C 3", time: { h: 15, m: 35 }, busNo: "Mini" },
-    { id: 37, from: "C 3", to: "H", time: { h: 18, m: 10 }, busNo: "Mini" },
+    { id: 34, from: "C 3", to: "H", time: { h: 14, m: 10 }, busNo: "32" },
+    { id: 35, from: "H", to: "C 3", time: { h: 15, m: 35 }, busNo: "Mini" },
+    { id: 36, from: "C 3", to: "H", time: { h: 18, m: 10 }, busNo: "Mini" },
 
 
     //Campus 7
