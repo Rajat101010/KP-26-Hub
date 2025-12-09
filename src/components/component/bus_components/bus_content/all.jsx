@@ -6,53 +6,80 @@ import BusTimer from "../BusTimer";
 import "../../../css/bus_components/content.css";
 
 export const allBusesCam = [
+    //Campus 25
     { id: 1, from: "H", to: "C 25", time: { h: 7, m: 35 }, busNo: "32" },
     { id: 2, from: "H", to: "C 25", time: { h: 8, m: 35 }, busNo: "32" },
-    { id: 3, from: "C 25", to: "H", time: { h: 9, m: 0 }, busNo: "32" },
-    { id: 4, from: "H", to: "C 25", time: { h: 9, m: 20 }, busNo: "15" },
-    { id: 5, from: "H", to: "C 25", time: { h: 9, m: 35 }, busNo: "32" },
-    { id: 6, from: "H", to: "C 25", time: { h: 10, m: 35 }, busNo: "72" },
-    { id: 7, from: "C 25", to: "H", time: { h: 11, m: 10 }, busNo: "15" },
-    { id: 8, from: "H", to: "C 25", time: { h: 11, m: 35 }, busNo: "15" },
-    { id: 9, from: "C 25", to: "H", time: { h: 12, m: 10 }, busNo: "32" },
-    { id: 10, from: "H", to: "C 25", time: { h: 12, m: 35 }, busNo: "32" },
-    { id: 11, from: "C 25", to: "H", time: { h: 13, m: 10 }, busNo: "32" },
-    { id: 12, from: "H", to: "C 25", time: { h: 13, m: 35 }, busNo: "15" },
-    { id: 13, from: "C 25", to: "H", time: { h: 14, m: 10 }, busNo: "15" },
-    { id: 14, from: "C 25", to: "H", time: { h: 14, m: 10 }, busNo: "72" },
-    { id: 15, from: "H", to: "C 25", time: { h: 14, m: 35 }, busNo: "72" },
-    { id: 16, from: "H", to: "C 25", time: { h: 14, m: 35 }, busNo: "15" },
-    { id: 17, from: "H", to: "C 25", time: { h: 14, m: 50 }, busNo: "32" },
-    { id: 18, from: "C 25", to: "H", time: { h: 17, m: 25 }, busNo: "72" },
-    { id: 19, from: "C 25", to: "H", time: { h: 17, m: 25 }, busNo: "32" },
+    { id: 3, from: "H", to: "C 25", time: { h: 9, m: 20 }, busNo: "15" },
+    { id: 4, from: "H", to: "C 25", time: { h: 9, m: 35 }, busNo: "32" },
+    { id: 5, from: "H", to: "C 25", time: { h: 10, m: 35 }, busNo: "72" },
+    { id: 6, from: "C 25", to: "H", time: { h: 11, m: 10 }, busNo: "15" },
+    { id: 7, from: "H", to: "C 25", time: { h: 11, m: 35 }, busNo: "15" },
+    { id: 8, from: "C 25", to: "H", time: { h: 12, m: 10 }, busNo: "32" },
+    { id: 9, from: "C 25", to: "H", time: { h: 13, m: 10 }, busNo: "32" },
+    { id: 10, from: "C 25", to: "H", time: { h: 13, m: 10 }, busNo: "Mini" },
+    { id: 11, from: "H", to: "C 25", time: { h: 13, m: 35 }, busNo: "15" },
+    { id: 12, from: "C 25", to: "H", time: { h: 14, m: 10 }, busNo: "15" },
+    { id: 13, from: "C 25", to: "H", time: { h: 14, m: 10 }, busNo: "72" },
+    { id: 14, from: "H", to: "C 25", time: { h: 14, m: 35 }, busNo: "72" },
+    { id: 15, from: "H", to: "C 25", time: { h: 14, m: 35 }, busNo: "15" },
+    { id: 16, from: "H", to: "C 25", time: { h: 15, m: 30 }, busNo: "32" },
+    { id: 17, from: "C 25", to: "H", time: { h: 16, m: 15 }, busNo: "22" },
+    { id: 18, from: "C 25", to: "H", time: { h: 17, m: 10 }, busNo: "72" },
+    { id: 19, from: "C 25", to: "H", time: { h: 17, m: 10 }, busNo: "Mini" },
+    { id: 20, from: "C 25", to: "H", time: { h: 18, m: 15 }, busNo: "22" },
+    { id: 21, from: "C 25", to: "H", time: { h: 18, m: 15 }, busNo: "32" },
 
-    { id: 1, from: "H", to: "C 3", time: { h: 8, m: 35 }, busNo: "Mini" },
-    { id: 2, from: "C 3", to: "H", time: { h: 9, m: 10 }, busNo: "Mini" },
-    { id: 3, from: "H", to: "C 3", time: { h: 9, m: 40 }, busNo: "Mini" },
-    { id: 4, from: "C 3", to: "H", time: { h: 10, m: 10 }, busNo: "Mini" },
-    { id: 5, from: "H", to: "C 3", time: { h: 10, m: 40 }, busNo: "Mini" },
-    { id: 6, from: "C 3", to: "H", time: { h: 12, m: 40 }, busNo: "Mini" },
-    { id: 7, from: "H", to: "C 3", time: { h: 13, m: 50 }, busNo: "Mini" },
-    { id: 8, from: "C 3", to: "H", time: { h: 14, m: 10 }, busNo: "Mini" },
-    { id: 9, from: "C 3", to: "H", time: { h: 16, m: 20 }, busNo: "32" },
-    { id: 10, from: "H", to: "C 3", time: { h: 17, m: 50 }, busNo: "Mini" },
-    { id: 11, from: "C 3", to: "H", time: { h: 18, m: 15 }, busNo: "Mini" },
+    //Campus 3
+    { id: 31, from: "H", to: "C 3", time: { h: 8, m: 35 }, busNo: "Mini" },
+    { id: 32, from: "H", to: "C 3", time: { h: 9, m: 40 }, busNo: "Mini" },
+    { id: 33, from: "H", to: "C 3", time: { h: 10, m: 40 }, busNo: "Mini" },
+    { id: 34, from: "C 3", to: "H", time: { h: 13, m: 10 }, busNo: "22" },
+    { id: 35, from: "C 3", to: "H", time: { h: 14, m: 10 }, busNo: "32" },
+    { id: 36, from: "H", to: "C 3", time: { h: 15, m: 35 }, busNo: "Mini" },
+    { id: 37, from: "C 3", to: "H", time: { h: 18, m: 10 }, busNo: "Mini" },
 
-    { id: 1, from: "H", to: "C 15, 7, 8", time: { h: 7, m: 35 }, busNo: "21" },
-    { id: 2, from: "C 15, 7, 8", to: "H", time: { h: 8, m: 10 }, busNo: "21" },
-    { id: 3, from: "H", to: "C 15, 7, 8", time: { h: 8, m: 35 }, busNo: "21" },
-    { id: 4, from: "H", to: "C 15", time: { h: 9, m: 40 }, busNo: "Mini" },
-    { id: 5, from: "C 15, 7, 8", to: "H", time: { h: 10, m: 0 }, busNo: "21" },
-    { id: 6, from: "C 15", to: "H", time: { h: 10, m: 10 }, busNo: "Mini" },
-    { id: 7, from: "H", to: "C 15, 7, 8", time: { h: 10, m: 35 }, busNo: "21" },
-    { id: 8, from: "H", to: "C 15, 7, 8", time: { h: 10, m: 40 }, busNo: "Mini" },
-    { id: 9, from: "C 15, 7, 8", to: "H", time: { h: 12, m: 30 }, busNo: "21" },
-    { id: 10, from: "H", to: "C 7", time: { h: 13, m: 10 }, busNo: "Mini" },
-    { id: 11, from: "C 7", to: "H", time: { h: 13, m: 30 }, busNo: "Mini" },
-    { id: 12, from: "H", to: "C 15, 7, 8", time: { h: 14, m: 20 }, busNo: "21" },
-    { id: 13, from: "C 7", to: "H", time: { h: 15, m: 30 }, busNo: "21" },
-    { id: 14, from: "H", to: "C 15, 7, 8", time: { h: 16, m: 0 }, busNo: "21" },
-    { id: 15, from: "C 15, 7, 8", to: "H", time: { h: 16, m: 40 }, busNo: "21" },
+
+    //Campus 7
+    { id: 41, from: "H", to: "C 7", time: { h: 7, m: 35 }, busNo: "22" },
+    { id: 42, from: "H", to: "C 7", time: { h: 8, m: 35 }, busNo: "22" },
+    { id: 43, from: "H", to: "C 7", time: { h: 8, m: 35 }, busNo: "Mini" },
+    { id: 44, from: "H", to: "C 7", time: { h: 9, m: 40 }, busNo: "Mini" },
+    { id: 45, from: "H", to: "C 7", time: { h: 10, m: 35 }, busNo: "22" },
+    { id: 46, from: "H", to: "C 7", time: { h: 10, m: 40 }, busNo: "Mini" },
+    { id: 47, from: "C 7", to: "H", time: { h: 11, m: 30 }, busNo: "22" },
+    { id: 48, from: "C 7", to: "H", time: { h: 13, m: 30 }, busNo: "22" },
+    { id: 49, from: "C 7", to: "H", time: { h: 14, m: 10 }, busNo: "32" },
+    { id: 50, from: "H", to: "C 7", time: { h: 14, m: 20 }, busNo: "22" },
+    { id: 51, from: "H", to: "C 7", time: { h: 15, m: 35 }, busNo: "Mini" },
+    { id: 52, from: "C 7", to: "H", time: { h: 15, m: 30 }, busNo: "22" },
+    { id: 53, from: "C 7", to: "H", time: { h: 17, m: 10 }, busNo: "22" },
+
+    //Campus 8
+    { id: 61, from: "H", to: "C 8", time: { h: 7, m: 35 }, busNo: "22" },
+    { id: 62, from: "H", to: "C 8", time: { h: 8, m: 35 }, busNo: "22" },
+    { id: 63, from: "H", to: "C 8", time: { h: 8, m: 35 }, busNo: "Mini" },
+    { id: 64, from: "H", to: "C 8", time: { h: 9, m: 40 }, busNo: "Mini" },
+    { id: 65, from: "H", to: "C 8", time: { h: 10, m: 35 }, busNo: "22" },
+    { id: 66, from: "H", to: "C 8", time: { h: 10, m: 40 }, busNo: "Mini" },
+    { id: 67, from: "C 8", to: "H", time: { h: 11, m: 30 }, busNo: "22" },
+    { id: 68, from: "C 8", to: "H", time: { h: 14, m: 10 }, busNo: "32" },
+    { id: 69, from: "H", to: "C 8", time: { h: 14, m: 20 }, busNo: "22" },
+    { id: 70, from: "H", to: "C 8", time: { h: 15, m: 35 }, busNo: "Mini" },
+    { id: 71, from: "C 8", to: "H", time: { h: 17, m: 10 }, busNo: "22" },
+
+    //Campus 15
+    { id: 81, from: "H", to: "C 15", time: { h: 7, m: 35 }, busNo: "22" },
+    { id: 82, from: "H", to: "C 15", time: { h: 8, m: 35 }, busNo: "22" },
+    { id: 83, from: "H", to: "C 15", time: { h: 8, m: 35 }, busNo: "Mini" },
+    { id: 84, from: "H", to: "C 15", time: { h: 9, m: 40 }, busNo: "Mini" },
+    { id: 85, from: "H", to: "C 15", time: { h: 10, m: 35 }, busNo: "22" },
+    { id: 86, from: "H", to: "C 15", time: { h: 10, m: 40 }, busNo: "Mini" },
+    { id: 87, from: "C 15", to: "H", time: { h: 11, m: 30 }, busNo: "22" },
+    { id: 88, from: "C 15", to: "H", time: { h: 13, m: 25 }, busNo: "22" },
+    { id: 89, from: "C 15", to: "H", time: { h: 14, m: 10 }, busNo: "32" },
+    { id: 90, from: "H", to: "C 15", time: { h: 14, m: 20 }, busNo: "22" },
+    { id: 91, from: "H", to: "C 15", time: { h: 15, m: 35 }, busNo: "Mini" },
+    { id: 92, from: "C 15", to: "H", time: { h: 17, m: 10 }, busNo: "22" },
 ];
 
 function AllBusContent() {
@@ -77,15 +104,15 @@ function AllBusContent() {
     // Filter buses: match campus inside comma-separated values
     const filteredBuses = selectedCampus
         ? allBusesCam
-              .filter((bus) => {
-                  const fromList = bus.from.split(",").map((c) => c.trim());
-                  const toList = bus.to.split(",").map((c) => c.trim());
-                  return (
-                      fromList.includes(selectedCampus) ||
-                      toList.includes(selectedCampus)
-                  );
-              })
-              .sort((a, b) => a.time.h * 60 + a.time.m - (b.time.h * 60 + b.time.m))
+            .filter((bus) => {
+                const fromList = bus.from.split(",").map((c) => c.trim());
+                const toList = bus.to.split(",").map((c) => c.trim());
+                return (
+                    fromList.includes(selectedCampus) ||
+                    toList.includes(selectedCampus)
+                );
+            })
+            .sort((a, b) => a.time.h * 60 + a.time.m - (b.time.h * 60 + b.time.m))
         : [];
 
     return (
@@ -137,8 +164,8 @@ function AllBusContent() {
                                                 {`${bus.time.h
                                                     .toString()
                                                     .padStart(2, "0")}:${bus.time.m
-                                                    .toString()
-                                                    .padStart(2, "0")}`}
+                                                        .toString()
+                                                        .padStart(2, "0")}`}
                                             </font>
                                         </div>
                                         <div className="menu_sub_part_div3">
