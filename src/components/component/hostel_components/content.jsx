@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import '../../css/hostel_components/content.css'
 import { useState } from "react";
 
@@ -27,7 +29,7 @@ function HostelContent() {
             <center>
                 <div className='center_box'>
                     <div>
-                        <img src={Kiit} alt="" className='kiit_logo' />
+                        <img src={Kiit} alt="kiit" className='kiit_logo' loading="lazy" />
                     </div>
                     <div>
                         <font className='font_for_hostel_name_hostel'>
@@ -39,15 +41,15 @@ function HostelContent() {
                         </font>
                     </div>
                     <div className='hostel_social_links'>
-                        <a href="tel:+918114377672" className="call_link">
+                        <Link to="tel:+918114377672" className="call_link">
                             <IoCall size={25} className='social_logos' />
-                        </a>
-                        <a href="https://maps.app.goo.gl/qMbkLsJYdyygw8tR8">
+                        </Link>
+                        <Link to="https://maps.app.goo.gl/qMbkLsJYdyygw8tR8">
                             <FaLocationDot size={25} className='social_logos' />
-                        </a>
-                        <a href="mailto:kingpalace.26@kiit.ac.in">
+                        </Link>
+                        <Link to="mailto:kingpalace.26@kiit.ac.in">
                             <IoMail size={25} className='social_logos' />
-                        </a>
+                        </Link>
                     </div>
                     <div>
                         <div className='share_the_app' onClick={() => setShow(true)}>
@@ -59,8 +61,10 @@ function HostelContent() {
                             <div className="overlay" onClick={handleOverlayClick}>
                                 <img
                                     src={AppQR}
+                                    alt="qr"
                                     className="popup_image"
                                     onClick={handleImageClick}
+                                    loading="lazy"
                                 />
                             </div>
                         )}

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { motion } from "framer-motion";
 
 import { IoCallOutline } from "react-icons/io5";
@@ -23,11 +25,11 @@ function ContactContent() {
                                 </font>
                             </div>
                             <div className="info_sub_part_div2">
-                                <a href="tel:+918114377672" className="call_link">
+                                <Link to="tel:+918114377672" className="call_link">
                                     <div className="revolving-border">
                                         <IoCallOutline size={30} />
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="info_sub_part_div3">
                                 <font className='font_menu_description'>
@@ -49,11 +51,11 @@ function ContactContent() {
                                 </font>
                             </div>
                             <div className="info_sub_part_div2">
-                                <a href="tel:+917978874274" className="call_link">
+                                <Link to="tel:+917978874274" className="call_link">
                                     <div className="revolving-border">
                                         <IoCallOutline size={30} />
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="info_sub_part_div3">
                                 <font className='font_menu_description'>
@@ -75,11 +77,11 @@ function ContactContent() {
                                 </font>
                             </div>
                             <div className="info_sub_part_div2">
-                                <a href="tel:+917473836490" className="call_link">
+                                <Link to="tel:+917473836490" className="call_link">
                                     <div className="revolving-border">
                                         <IoCallOutline size={30} />
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="info_sub_part_div3">
                                 <font className='font_menu_description'>
@@ -101,11 +103,11 @@ function ContactContent() {
                                 </font>
                             </div>
                             <div className="info_sub_part_div2">
-                                <a href="tel:+919861896984" className="call_link">
+                                <Link to="tel:+919861896984" className="call_link">
                                     <div className="revolving-border">
                                         <IoCallOutline size={30} />
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="info_sub_part_div3">
                                 <font className='font_menu_description'>
@@ -127,11 +129,11 @@ function ContactContent() {
                                 </font>
                             </div>
                             <div className="info_sub_part_div2">
-                                <a href="tel:+919776333782" className="call_link">
+                                <Link to="tel:+919776333782" className="call_link">
                                     <div className="revolving-border">
                                         <IoCallOutline size={30} />
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="info_sub_part_div3">
                                 <font className='font_menu_description'>
@@ -153,11 +155,11 @@ function ContactContent() {
                                 </font>
                             </div>
                             <div className="info_sub_part_div2">
-                                <a href="tel:+919437415713" className="call_link">
+                                <Link to="tel:+919437415713" className="call_link">
                                     <div className="revolving-border">
                                         <IoCallOutline size={30} />
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="info_sub_part_div3">
                                 <font className='font_menu_description'>

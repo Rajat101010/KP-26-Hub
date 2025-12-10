@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import '../../css/footer.css'
 
 import { IoBusOutline } from "react-icons/io5";
@@ -14,7 +16,7 @@ function FooterInfo() {
     return (
         <main>
             <div className='footer_parent'>
-                <a href="/">
+                <Link to="/">
                     <div className='footer_items'>
                         <center>
                             <IoBusOutline  size={20} className='footer_all_item' />
@@ -24,8 +26,8 @@ function FooterInfo() {
                             </font>
                         </center>
                     </div>
-                </a>
-                <a href="/days">
+                </Link>
+                <Link to="/days">
                     <div className='footer_items'>
                         <center>
                             <IoFastFoodOutline size={20} className='footer_all_item' />
@@ -35,8 +37,8 @@ function FooterInfo() {
                             </font>
                         </center>
                     </div>
-                </a>
-                <a href="/update">
+                </Link>
+                <Link to="/update">
                     <div className='footer_items'>
                         <center>
                             <IoChatbubbleEllipsesOutline size={20} className='footer_all_item' />
@@ -46,8 +48,8 @@ function FooterInfo() {
                             </font>
                         </center>
                     </div>
-                </a>
-                <a href="/hostel">
+                </Link>
+                <Link to="/hostel">
                     <div className='footer_items'>
                         <center>
                             <PiBuildingApartment size={20} className='footer_all_item' />
@@ -57,7 +59,7 @@ function FooterInfo() {
                             </font>
                         </center>
                     </div>
-                </a>
+                </Link>
             </div>
         </main>
     );

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import '../css/app_name.css'
 import { AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
@@ -31,9 +33,9 @@ function AppName() {
 
       {showLinks && (
         <div className="dropdown_box">
-          <a href="/contact" className="dropdown_link"><IoCall /> &nbsp;&nbsp;Contact</a>
-          <a href="/washing-machine" className="dropdown_link"><PiWashingMachineBold /> &nbsp;&nbsp;W.M. Time</a>
-          <a href="/food-info" className="dropdown_link"><PiBowlFoodBold /> &nbsp;&nbsp;Food Info</a>
+          <Link to="/contact" className="dropdown_link"><IoCall /> &nbsp;&nbsp;Contact</Link>
+          <Link to="/washing-machine" className="dropdown_link"><PiWashingMachineBold /> &nbsp;&nbsp;W.M. Time</Link>
+          <Link to="/food-info" className="dropdown_link"><PiBowlFoodBold /> &nbsp;&nbsp;Food Info</Link>
         </div>
       )}
 
