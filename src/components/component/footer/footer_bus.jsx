@@ -49,7 +49,7 @@ function FooterBus() {
                         </center>
                     </div>
                 </Link>
-                <a href="/hostel">
+                <Link to="/hostel">
                     <div className='footer_items'>
                         <center>
                             <PiBuildingApartment size={20} className='footer_all_item' />
@@ -59,7 +59,7 @@ function FooterBus() {
                             </font>
                         </center>
                     </div>
-                </a>
+                </Link>
             </div>
         </main>
     );
