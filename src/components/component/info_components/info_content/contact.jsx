@@ -25,7 +25,7 @@ function ContactContent() {
                                 </font>
                             </div>
                             <div className="info_sub_part_div2">
-                                <Link to="tel:+918114377672" className="call_link">
+                                <Link to="tel:+918114377672" className="call_link no-highlight">
                                     <div className="revolving-border">
                                         <IoCallOutline size={30} />
                                     </div>
@@ -51,7 +51,7 @@ function ContactContent() {
                                 </font>
                             </div>
                             <div className="info_sub_part_div2">
-                                <Link to="tel:+917978874274" className="call_link">
+                                <Link to="tel:+917978874274" className="call_link no-highlight">
                                     <div className="revolving-border">
                                         <IoCallOutline size={30} />
                                     </div>
@@ -77,7 +77,7 @@ function ContactContent() {
                                 </font>
                             </div>
                             <div className="info_sub_part_div2">
-                                <Link to="tel:+917473836490" className="call_link">
+                                <Link to="tel:+917473836490" className="call_link no-highlight">
                                     <div className="revolving-border">
                                         <IoCallOutline size={30} />
                                     </div>
@@ -103,7 +103,7 @@ function ContactContent() {
                                 </font>
                             </div>
                             <div className="info_sub_part_div2">
-                                <Link to="tel:+919861896984" className="call_link">
+                                <Link to="tel:+919861896984" className="call_link no-highlight">
                                     <div className="revolving-border">
                                         <IoCallOutline size={30} />
                                     </div>
@@ -129,7 +129,7 @@ function ContactContent() {
                                 </font>
                             </div>
                             <div className="info_sub_part_div2">
-                                <Link to="tel:+919776333782" className="call_link">
+                                <Link to="tel:+919776333782" className="call_link no-highlight">
                                     <div className="revolving-border">
                                         <IoCallOutline size={30} />
                                     </div>
@@ -155,7 +155,7 @@ function ContactContent() {
                                 </font>
                             </div>
                             <div className="info_sub_part_div2">
-                                <Link to="tel:+919437415713" className="call_link">
+                                <Link to="tel:+919437415713" className="call_link no-highlight">
                                     <div className="revolving-border">
                                         <IoCallOutline size={30} />
                                     </div>

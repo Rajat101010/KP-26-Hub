@@ -16,7 +16,7 @@ function FooterInfo() {
     return (
         <main>
             <div className='footer_parent'>
-                <Link to="/">
+                <Link to="/" className="no-highlight">
                     <div className='footer_items'>
                         <center>
                             <IoBusOutline  size={20} className='footer_all_item' />
@@ -27,7 +27,7 @@ function FooterInfo() {
                         </center>
                     </div>
                 </Link>
-                <Link to="/days">
+                <Link to="/days" className="no-highlight">
                     <div className='footer_items'>
                         <center>
                             <IoFastFoodOutline size={20} className='footer_all_item' />
@@ -38,7 +38,7 @@ function FooterInfo() {
                         </center>
                     </div>
                 </Link>
-                <Link to="/update">
+                <Link to="/update" className="no-highlight">
                     <div className='footer_items'>
                         <center>
                             <IoChatbubbleEllipsesOutline size={20} className='footer_all_item' />
@@ -49,7 +49,7 @@ function FooterInfo() {
                         </center>
                     </div>
                 </Link>
-                <Link to="/hostel">
+                <Link to="/hostel" className="no-highlight">
                     <div className='footer_items'>
                         <center>
                             <PiBuildingApartment size={20} className='footer_all_item' />

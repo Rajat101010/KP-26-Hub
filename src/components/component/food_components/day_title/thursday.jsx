@@ -7,49 +7,49 @@ function DayTitleThursday() {
         <main>
             <center>
                 <div className='day_title_parent'>
-                    <Link to="/sunday">
+                    <Link to="/sunday" className="no-highlight">
                         <div className='day_title_all'>
                             <font className='page_nav_font'>
                                 Sun
                             </font>
                         </div>
                     </Link>
-                    <Link to="/monday">
+                    <Link to="/monday" className="no-highlight">
                         <div className='day_title_all'>
                             <font className='page_nav_font'>
                                 Mon
                             </font>
                         </div>
                     </Link>
-                    <Link to="/tuesday">
+                    <Link to="/tuesday" className="no-highlight">
                         <div className='day_title_all'>
                             <font className='page_nav_font'>
                                 Tue
                             </font>
                         </div>
                     </Link>
-                    <Link to="/wednesday">
+                    <Link to="/wednesday" className="no-highlight">
                         <div className='day_title_all'>
                             <font className='page_nav_font'>
                                 Wed
                             </font>
                         </div>
                     </Link>
-                    <Link to="/thursday">
+                    <Link to="/thursday" className="no-highlight">
                         <div className='day_title_all day_title_active'>
                             <font className='page_nav_font_active'>
                                 Thu
                             </font>
                         </div>
                     </Link>
-                    <Link to="/friday">
+                    <Link to="/friday" className="no-highlight">
                         <div className='day_title_all'>
                             <font className='page_nav_font'>
                                 Fri
                             </font>
                         </div>
                     </Link>
-                    <Link to="/saturday">
+                    <Link to="/saturday" className="no-highlight">
                         <div className='day_title_all'>
                             <font className='page_nav_font'>
                                 Sat

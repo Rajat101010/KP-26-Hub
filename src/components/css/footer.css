@@ -15,11 +15,11 @@
     padding-top: 0.5rem;
 }
 
-.footer_items{
+.footer_items {
     line-height: 1rem;
 }
 
-.footer_all_item{
+.footer_all_item {
     border-radius: 20px;
     width: 60px;
     padding-top: 0.3rem;
@@ -27,12 +27,20 @@
     color: white;
 }
 
-.footer_active_item{
+.footer_active_item {
     background-color: #3A3320;
     color: #F8EACB;
+    clip-path: circle(0% at center);
+    animation: reveal 0.5s ease-out forwards;
 }
 
-.footer_all_item:hover{
+@keyframes reveal {
+    to {
+        clip-path: circle(150% at center);
+    }
+}
+
+.footer_all_item:hover {
     background-color: #332D1C;
     color: #F3D9A4;
     cursor: pointer;

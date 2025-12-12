@@ -33,9 +33,9 @@ function AppName() {
 
       {showLinks && (
         <div className="dropdown_box">
-          <Link to="/contact" className="dropdown_link"><IoCall /> &nbsp;&nbsp;Contact</Link>
-          <Link to="/washing-machine" className="dropdown_link"><PiWashingMachineBold /> &nbsp;&nbsp;W.M. Time</Link>
-          <Link to="/food-info" className="dropdown_link"><PiBowlFoodBold /> &nbsp;&nbsp;Food Info</Link>
+          <Link to="/contact" className="dropdown_link no-highlight"><IoCall /> &nbsp;&nbsp;Contact</Link>
+          <Link to="/washing-machine" className="dropdown_link no-highlight"><PiWashingMachineBold /> &nbsp;&nbsp;W.M. Time</Link>
+          <Link to="/food-info" className="dropdown_link no-highlight"><PiBowlFoodBold /> &nbsp;&nbsp;Food Info</Link>
         </div>
       )}
 
