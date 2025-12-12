@@ -7,10 +7,10 @@ import { IoFastFoodOutline } from "react-icons/io5";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { PiBuildingApartment } from "react-icons/pi";
 
-import { IoBusSharp } from "react-icons/io5";
-import { IoFastFood } from "react-icons/io5";
-import { IoChatbubbleEllipses } from "react-icons/io5";
-import { PiBuildingApartmentFill } from "react-icons/pi";
+// import { IoBusSharp } from "react-icons/io5";
+// import { IoFastFood } from "react-icons/io5";
+// import { IoChatbubbleEllipses } from "react-icons/io5";
+// import { PiBuildingApartmentFill } from "react-icons/pi";
 
 function FooterInfo() {
     return (
@@ -22,7 +22,7 @@ function FooterInfo() {
                             <IoBusOutline  size={20} className='footer_all_item' />
                             <br />
                             <font className='footer_item_font'>
-                                Buses
+                                Bus
                             </font>
                         </center>
                     </div>

@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 import '../../css/footer.css'
 
-import { IoBusOutline } from "react-icons/io5";
+// import { IoBusOutline } from "react-icons/io5";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { PiBuildingApartment } from "react-icons/pi";
 
 import { IoBusSharp } from "react-icons/io5";
-import { IoFastFood } from "react-icons/io5";
-import { IoChatbubbleEllipses } from "react-icons/io5";
-import { PiBuildingApartmentFill } from "react-icons/pi";
+// import { IoFastFood } from "react-icons/io5";
+// import { IoChatbubbleEllipses } from "react-icons/io5";
+// import { PiBuildingApartmentFill } from "react-icons/pi";
 
 function FooterBus() {
     return (
@@ -22,7 +22,7 @@ function FooterBus() {
                             <IoBusSharp size={20} className='footer_all_item footer_active_item' />
                             <br />
                             <font className='footer_item_font_active'>
-                                Buses
+                                Bus
                             </font>
                         </center>
                     </div>

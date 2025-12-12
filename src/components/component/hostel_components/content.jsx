@@ -41,7 +41,7 @@ function HostelContent() {
                         </font>
                     </div>
                     <div className='hostel_social_links'>
-                        <Link to="tel:+918114377672" className="call_link no-highlight">
+                        <Link to="tel:+918114377672" className="no-highlight">
                             <IoCall size={25} className='social_logos' />
                         </Link>
                         <Link to="https://maps.app.goo.gl/qMbkLsJYdyygw8tR8" className="no-highlight">

@@ -30,14 +30,6 @@
 .footer_active_item {
     background-color: #3A3320;
     color: #F8EACB;
-    clip-path: circle(0% at center);
-    animation: reveal 0.5s ease-out forwards;
-}
-
-@keyframes reveal {
-    to {
-        clip-path: circle(150% at center);
-    }
 }
 
 .footer_all_item:hover {
