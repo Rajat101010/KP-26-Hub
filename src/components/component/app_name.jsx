@@ -22,7 +22,7 @@ function AppName() {
         </div>
 
         <div 
-          className='app_name_menu'
+          className='app_name_menu no-highlight'
           onClick={() => setShowLinks(!showLinks)}
         >
           <font className='font_for_app_name_menu'>
