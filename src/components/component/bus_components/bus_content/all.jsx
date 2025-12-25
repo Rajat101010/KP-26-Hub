@@ -117,11 +117,11 @@ function AllBusContent() {
     return (
         <main>
             <center>
-                <div style={{ margin: "20px 0" }}>
+                <div style={{ margin: "20px 0" }} className="select-wrapper">
                     <select
                         value={selectedCampus}
                         onChange={(e) => setSelectedCampus(e.target.value)}
-                        className="drop_down_menu"
+                        className="drop_down_menu custom-select"
                     >
                         <option value="">Select Campus</option>
                         {campuses.map((campus, index) => (

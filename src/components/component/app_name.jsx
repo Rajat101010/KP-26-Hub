@@ -40,20 +40,20 @@ function AppName() {
       </div>
 
       {showLinks && (
-  <div className="overlay_title" onClick={handleOverlayClickMenu}>
-    <div className="dropdown_box" onClick={handleImageClickMenu}>
-      <Link to="/contact" className="dropdown_link animate-item no-highlight">
-        <IoCall /> &nbsp;&nbsp;Contact
-      </Link>
-      <Link to="/washing-machine" className="dropdown_link animate-item no-highlight">
-        <PiWashingMachineBold /> &nbsp;&nbsp;W.M. Time
-      </Link>
-      <Link to="/food-info" className="dropdown_link animate-item no-highlight">
-        <PiBowlFoodBold /> &nbsp;&nbsp;Food Info
-      </Link>
-    </div>
-  </div>
-)}
+        <div className="overlay_title" onClick={handleOverlayClickMenu}>
+          <div className="dropdown_box" onClick={handleImageClickMenu}>
+            <Link to="/contact" className="dropdown_link animate-item no-highlight">
+              <IoCall /> &nbsp;&nbsp;Contact
+            </Link>
+            <Link to="/washing-machine" className="dropdown_link animate-item no-highlight">
+              <PiWashingMachineBold /> &nbsp;&nbsp;W.M. Time
+            </Link>
+            <Link to="/food-info" className="dropdown_link animate-item no-highlight">
+              <PiBowlFoodBold /> &nbsp;&nbsp;Food Info
+            </Link>
+          </div>
+        </div>
+      )}
 
     </main>
   );
