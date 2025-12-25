@@ -61,7 +61,7 @@
 
 .footer_item_font_active {
     font-size: 0.8rem;
-    font-weight:900;
+    font-weight: 900;
     color: white;
 }
 
@@ -79,6 +79,40 @@
     font-weight: 700;
     color: white;
 }
+
+.page_nav_font_bus {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: white;
+}
+
+.page_nav_font_bus_active {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #fafad2;
+}
+
+
+.page_nav_font_food {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: white;
+}
+
+@media(max-width: 768px) {
+    .page_nav_font_food {
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: white;
+    }
+}
+
+.page_nav_font_food_active {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fafad2;
+}
+
 
 .page_nav_font_active_bus_and_food {
     font-size: 1.1rem;
