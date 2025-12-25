@@ -11,7 +11,7 @@ import { IoCall } from "react-icons/io5";
 import { IoMail } from "react-icons/io5";
 import { IoQrCodeOutline } from "react-icons/io5";
 
-
+import { IoIosArrowForward } from "react-icons/io";
 
 function HostelContent() {
     const [show, setShow] = useState(false);
@@ -43,61 +43,84 @@ function HostelContent() {
 
 
                     <div className="hostel_social_links_parent">
-                        <div className="hostel_social_links_div">
-                            <div>
+                        <div className="hostel_social_links_div_and_arrow">
+                            <div className="hostel_social_links_div">
+                                <div>
+                                    <Link to="tel:+918114377672" className="no-highlight">
+                                        <IoCall size={25} className='social_logos' />
+                                    </Link>
+                                </div>
+                                <div className="hostel_logo_text">
+                                    <div>
+                                        <font className='font_for_header_title'>
+                                            Hostel Reception
+                                        </font>
+                                    </div>
+                                    <div>
+                                        <font className='font_hostel_description'>
+                                            +91 8114377672
+                                        </font>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="hostel_end_arrow">
                                 <Link to="tel:+918114377672" className="no-highlight">
-                                    <IoCall size={25} className='social_logos' />
+                                    <IoIosArrowForward className="social_arrow" />
                                 </Link>
                             </div>
-                            <div className="hostel_logo_text">
+                        </div>
+
+
+                        <div className="hostel_social_links_div_and_arrow">
+                            <div className="hostel_social_links_div">
                                 <div>
-                                    <font className='font_for_header_title'>
-                                        Hostel Reception
-                                    </font>
+                                    <Link to="https://maps.app.goo.gl/qMbkLsJYdyygw8tR8" className="no-highlight">
+                                        <FaLocationDot size={25} className='social_logos' />
+                                    </Link>
                                 </div>
-                                <div>
-                                    <font className='font_hostel_description'>
-                                        +91 8114377672
-                                    </font>
+                                <div className="hostel_logo_text">
+                                    <div>
+                                        <font className='font_for_header_title'>
+                                            Hostel Location
+                                        </font>
+                                    </div>
+                                    <div>
+                                        <font className='font_hostel_description'>
+                                            Patia, Bhubaneswar, Odisha 751024
+                                        </font>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="hostel_social_links_div">
-                            <div>
+                            <div className="hostel_end_arrow">
                                 <Link to="https://maps.app.goo.gl/qMbkLsJYdyygw8tR8" className="no-highlight">
-                                    <FaLocationDot size={25} className='social_logos' />
+                                    <IoIosArrowForward className="social_arrow" />
                                 </Link>
-                            </div>
-                            <div className="hostel_logo_text">
-                                <div>
-                                    <font className='font_for_header_title'>
-                                        Hostel Location
-                                    </font>
-                                </div>
-                                <div>
-                                    <font className='font_hostel_description'>
-                                        Patia, Bhubaneswar, Odisha 751024
-                                    </font>
-                                </div>
                             </div>
                         </div>
-                        <div className="hostel_social_links_div">
-                            <div>
-                                <Link to="mailto:kingpalace.26@kiit.ac.in" className="no-highlight">
-                                    <IoMail size={25} className='social_logos' />
-                                </Link>
+                        <div className="hostel_social_links_div_and_arrow">
+                            <div className="hostel_social_links_div">
+                                <div>
+                                    <Link to="mailto:kingpalace.26@kiit.ac.in" className="no-highlight">
+                                        <IoMail size={25} className='social_logos' />
+                                    </Link>
+                                </div>
+                                <div className="hostel_logo_text">
+                                    <div>
+                                        <font className='font_for_header_title'>
+                                            Hostel Email
+                                        </font>
+                                    </div>
+                                    <div>
+                                        <font className='font_hostel_description'>
+                                            kingpalace.26@kiit.ac.in
+                                        </font>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="hostel_logo_text">
-                                <div>
-                                    <font className='font_for_header_title'>
-                                        Hostel Email
-                                    </font>
-                                </div>
-                                <div>
-                                    <font className='font_hostel_description'>
-                                        kingpalace.26@kiit.ac.in
-                                    </font>
-                                </div>
+                            <div className="hostel_end_arrow">
+                                <Link to="mailto:kingpalace.26@kiit.ac.in" className="no-highlight">
+                                    <IoIosArrowForward className="social_arrow" />
+                                </Link>
                             </div>
                         </div>
                     </div>

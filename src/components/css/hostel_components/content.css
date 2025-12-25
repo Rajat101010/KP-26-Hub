@@ -84,6 +84,24 @@
 
 
 
+.hostel_social_links_div_and_arrow{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    align-items: center;
+    border-bottom: 1px solid #4e452e;
+    gap: 15px;
+}
+
+@media(max-width: 768px){
+    .hostel_social_links_div_and_arrow{
+        width: 90%;
+    }
+}
+
+.hostel_social_links_div_and_arrow:last-child {
+    border-bottom: none;
+}
 
 .hostel_social_links_parent {
     margin-bottom: 2rem;
@@ -93,23 +111,26 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    border-bottom: 1px solid #4e452e;
-    width: 35%;
-    gap: 30px;
+    gap: 15px;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    width: 100%;
 }
 
 @media(max-width: 768px) {
     .hostel_social_links_div {
-        width: 90%;
+        width: 100%;
     }
-}
-
-.hostel_social_links_div:last-child {
-    border-bottom: none;
 }
 
 .hostel_logo_text {
     text-align: left;
+}
+
+.hostel_end_arrow{
+    text-align: right;
+}
+
+.social_arrow{
+    color: white;
 }
