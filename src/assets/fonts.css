@@ -54,7 +54,7 @@
 
 
 .footer_item_font {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 500;
     color: white;
 }
@@ -69,8 +69,8 @@
 
 
 .page_nav_font {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 400;
     color: white;
 }
 
@@ -81,8 +81,8 @@
 }
 
 .page_nav_font_active_bus_and_food {
-    font-size: 1rem;
-    font-weight: 800;
+    font-size: 1.1rem;
+    font-weight: 700;
     color: #fafad2;
 }
 

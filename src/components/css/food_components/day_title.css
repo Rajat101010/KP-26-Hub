@@ -13,6 +13,8 @@
 
     border-bottom: 1px solid #2F2A1C;
     border-radius: 1px;
+
+    align-items: center;
 }
 
 @media(max-width: 768px){
@@ -34,7 +36,7 @@
     flex-shrink: 1;
 
     padding-top: 4px;
-    padding-bottom: 0.6rem;
+    padding-bottom: 0.76rem;
     text-align: center;
     align-items: center;
 }
