@@ -56,3 +56,9 @@ svg {
 .dropdown_link:hover {
     color: #ddd;
 }
+
+.overlay_title {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}

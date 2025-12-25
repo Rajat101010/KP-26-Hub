@@ -9,7 +9,7 @@ function DayTitleSunday() {
                 <div className='day_title_parent'>
                     <Link to="/sunday" className="no-highlight">
                         <div className='day_title_all day_title_active'>
-                            <font className='page_nav_font_active'>
+                            <font className='page_nav_font_active_bus_and_food'>
                                 Sun
                             </font>
                         </div>

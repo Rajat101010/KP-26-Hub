@@ -9,7 +9,7 @@ function NowAllTitle() {
                 <div className='now_all_title_parent'>
                     <Link to="/" className="no-highlight">
                         <div className='now_all_title_all now_all_title_active'>
-                            <font className='page_nav_font_active'>
+                            <font className='page_nav_font_active_bus_and_food'>
                                 Now
                             </font>
                         </div>

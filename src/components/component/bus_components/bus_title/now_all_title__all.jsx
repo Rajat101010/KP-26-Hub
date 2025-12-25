@@ -16,7 +16,7 @@ function NowAllTitle() {
                     </Link>
                     <Link to="/bus-all" className="no-highlight">
                         <div className='now_all_title_all now_all_title_active'>
-                            <font className='page_nav_font_active'>
+                            <font className='page_nav_font_active_bus_and_food'>
                                 All
                             </font>
                         </div>

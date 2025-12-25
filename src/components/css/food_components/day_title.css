@@ -1,15 +1,24 @@
 .day_title_parent {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     margin-top: 1rem;
 
     width: 100%;
-    gap: 2px;
+    gap: 0px;
     flex-wrap: nowrap;
 
-    padding: 0 1rem;
+    padding: 0 2rem;
     box-sizing: border-box;
     overflow: hidden;
+
+    border-bottom: 1px solid #2F2A1C;
+    border-radius: 1px;
+}
+
+@media(max-width: 768px){
+    .day_title_parent{
+        padding: 0 1rem;
+    }
 }
 
 .day_title_parent > * {
@@ -17,16 +26,17 @@
 }
 
 .day_title_all {
-    border: 1px solid #fafad2;
-    background-color: #1E1E1E;
     width: auto;
     min-width: 150px;
-    border-radius: 10px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    border-radius: 1px;
     text-align: center;
     align-items: center;
     flex-shrink: 1;
+
+    padding-top: 4px;
+    padding-bottom: 0.6rem;
+    text-align: center;
+    align-items: center;
 }
 
 @media(max-width: 768px) {
@@ -36,10 +46,14 @@
 }
 
 .day_title_active {
-    background-color: #5A5338;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #fafad2;
+    border-radius: 1px;
 }
 
 .day_title_all:hover {
-    background-color: #332D1C;
+    background-color: #1E1E1E;
     cursor: pointer;
 }

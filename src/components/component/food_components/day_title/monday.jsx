@@ -16,7 +16,7 @@ function DayTitleMonday() {
                     </Link>
                     <Link to="/monday" className="no-highlight">
                         <div className='day_title_all day_title_active'>
-                            <font className='page_nav_font_active'>
+                            <font className='page_nav_font_active_bus_and_food'>
                                 Mon
                             </font>
                         </div>
