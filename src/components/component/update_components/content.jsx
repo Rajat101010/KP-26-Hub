@@ -49,6 +49,14 @@ function UpdateContent() {
             active: false,
             startTime: "09:00 PM",
             endTime: "11:00 PM",
+        },
+        {
+            id: 5,
+            title: "Transportation",
+            description: "All transportation services will remain inactive from 25 December 2025 to 1 January 2026",
+            active: true,
+            startTime: "All Day",
+            endTime: "",
         }
     ];
 
