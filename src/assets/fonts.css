@@ -167,12 +167,12 @@
 .font_for_header_title_hostel {
     color: #B0B0B0;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .font_hostel_description {
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
 }
 

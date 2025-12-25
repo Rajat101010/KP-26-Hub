@@ -31,7 +31,7 @@ function HostelContent() {
                     <div>
                         <img src={Kiit} alt="kiit" className='kiit_logo' loading="lazy" />
                     </div>
-                    <div>
+                    <div className="hostel_name_hostelpage">
                         <font className='font_for_hostel_name_hostel'>
                             Kings Palace - 26
                         </font>
@@ -40,17 +40,68 @@ function HostelContent() {
                             KIIT Internaltional Hostel
                         </font>
                     </div>
-                    <div className='hostel_social_links'>
-                        <Link to="tel:+918114377672" className="no-highlight">
-                            <IoCall size={25} className='social_logos' />
-                        </Link>
-                        <Link to="https://maps.app.goo.gl/qMbkLsJYdyygw8tR8" className="no-highlight">
-                            <FaLocationDot size={25} className='social_logos' />
-                        </Link>
-                        <Link to="mailto:kingpalace.26@kiit.ac.in" className="no-highlight">
-                            <IoMail size={25} className='social_logos' />
-                        </Link>
+
+
+                    <div className="hostel_social_links_parent">
+                        <div className="hostel_social_links_div">
+                            <div>
+                                <Link to="tel:+918114377672" className="no-highlight">
+                                    <IoCall size={25} className='social_logos' />
+                                </Link>
+                            </div>
+                            <div className="hostel_logo_text">
+                                <div>
+                                    <font className='font_for_header_title'>
+                                        Hostel Reception
+                                    </font>
+                                </div>
+                                <div>
+                                    <font className='font_hostel_description'>
+                                        +91 8114377672
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="hostel_social_links_div">
+                            <div>
+                                <Link to="https://maps.app.goo.gl/qMbkLsJYdyygw8tR8" className="no-highlight">
+                                    <FaLocationDot size={25} className='social_logos' />
+                                </Link>
+                            </div>
+                            <div className="hostel_logo_text">
+                                <div>
+                                    <font className='font_for_header_title'>
+                                        Hostel Location
+                                    </font>
+                                </div>
+                                <div>
+                                    <font className='font_hostel_description'>
+                                        Patia, Bhubaneswar, Odisha 751024
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="hostel_social_links_div">
+                            <div>
+                                <Link to="mailto:kingpalace.26@kiit.ac.in" className="no-highlight">
+                                    <IoMail size={25} className='social_logos' />
+                                </Link>
+                            </div>
+                            <div className="hostel_logo_text">
+                                <div>
+                                    <font className='font_for_header_title'>
+                                        Hostel Email
+                                    </font>
+                                </div>
+                                <div>
+                                    <font className='font_hostel_description'>
+                                        kingpalace.26@kiit.ac.in
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div>
                         <div className='share_the_app' onClick={() => setShow(true)}>
                             <font className='share_the_qr_font'>
@@ -73,7 +124,7 @@ function HostelContent() {
                         <div className='hostel_app_descriotion'>
                             <font className='font_hostel_description'>
                                 <p>
-                                    <b>KP-26 Hub</b> <br /> an application designed to provide hostel details, including food, transportation, and other essential information for all residents.
+                                    <b>KP-26 Hub,</b> an application designed to provide hostel details, including food, transportation, and other essential information for all residents.
                                 </p>
                             </font>
                         </div>

@@ -1,14 +1,7 @@
-.center_box {
-
-    position: fixed;   /* stays centered regardless of scrolling */
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 100%;   /* or set specific width */
-    height: auto;  /* or set specific height */
+.hostel_name_hostelpage {
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
 }
-
 
 .kiit_logo {
     height: 10rem;
@@ -20,13 +13,6 @@
     }
 }
 
-.hostel_social_links {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 3rem;
-}
-
 .social_logos {
     padding: 0.5rem;
     border: 2px solid #fafad2;
@@ -34,7 +20,7 @@
     border-radius: 50%;
 }
 
-.social_logos:hover{
+.social_logos:hover {
     color: white;
     border: 2px solid white;
 }
@@ -48,7 +34,7 @@
     box-shadow: 0px 0px 10px white;
 }
 
-.share_the_app:hover{
+.share_the_app:hover {
     border: 2px solid #fafad2;
     box-shadow: 0px 0px 10px #fafad2;
     cursor: pointer;
@@ -56,7 +42,9 @@
 
 .hostel_app_descriotion {
     margin-top: 3rem;
-    width: 50%;
+    width: 35%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 @media(max-width: 768px) {
@@ -76,19 +64,52 @@
 
 .popup_image {
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40%;
     border-radius: 10px;
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
     .popup_image {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
 }
+
+
+
+
+
+.hostel_social_links_parent {
+    margin-bottom: 2rem;
+}
+
+.hostel_social_links_div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px solid #4e452e;
+    width: 35%;
+    gap: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media(max-width: 768px) {
+    .hostel_social_links_div {
+        width: 90%;
+    }
+}
+
+.hostel_social_links_div:last-child {
+    border-bottom: none;
+}
+
+.hostel_logo_text {
+    text-align: left;
 }
