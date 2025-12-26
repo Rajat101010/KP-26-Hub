@@ -79,3 +79,9 @@ svg {
     transform: translateY(0);
   }
 }
+
+.download_icon_and_menu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

@@ -8,6 +8,8 @@ import { IoCall } from "react-icons/io5";
 import { PiWashingMachineBold } from "react-icons/pi";
 import { PiBowlFoodBold } from "react-icons/pi";
 
+import InstallAppButton from "./app_install_button";
+
 function AppName() {
 
   const [showLinks, setshowLinks] = useState(false);
@@ -29,13 +31,20 @@ function AppName() {
           </font>
         </div>
 
-        <div
-          className='app_name_menu no-highlight'
-          onClick={() => setshowLinks(!showLinks)}
-        >
-          <font className='font_for_app_name_menu'>
-            <AiOutlineMenu />
-          </font>
+        <div className="download_icon_and_menu">
+          <div>
+            <font className='font_for_app_name_menu'>
+              <InstallAppButton />
+            </font>
+          </div>
+          <div
+            className='app_name_menu no-highlight'
+            onClick={() => setshowLinks(!showLinks)}
+          >
+            <font className='font_for_app_name_menu'>
+              <AiOutlineMenu />
+            </font>
+          </div>
         </div>
       </div>
 
