@@ -21,6 +21,8 @@ import Thursday from './main_pages/pages/food_pages/thursday';
 import Friday from './main_pages/pages/food_pages/friday';
 import Saturday from './main_pages/pages/food_pages/saturday';
 
+import Food from './main_pages/pages/food_pages/food';
+
 //info-pages
 import Contact from './main_pages/pages/info_pages/contact';
 import FoodInfo from './main_pages/pages/info_pages/food_info';
@@ -52,6 +54,8 @@ function App() {
           <Route path='/thursday' element={<Thursday />} />
           <Route path='/friday' element={<Friday />} />
           <Route path='/saturday' element={<Saturday />} />
+
+          <Route path='/food' element={<Food />} />
 
           <Route path='/contact' element={<Contact />} />
           <Route path='/food-info' element={<FoodInfo />} />
