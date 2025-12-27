@@ -24,8 +24,8 @@ function WashingMachineContent() {
                             </div>
                             <div className="info_sub_part_div3">
                                 <font className='font_info_description'>
-                                    Time 1 &#9679; 9:00 to 13:00 <br />
-                                    Time 2 &#9679; 15:00 to 18:00
+                                    Time 1 &nbsp;&nbsp;&#9679;&nbsp;&nbsp; 9:00 to 13:00 <br />
+                                    Time 2 &nbsp;&nbsp;&#9679;&nbsp;&nbsp; 15:00 to 18:00
                                 </font>
                             </div>
                         </div>
@@ -46,8 +46,8 @@ function WashingMachineContent() {
                             </div>
                             <div className="info_sub_part_div3">
                                 <font className='font_info_description'>
-                                    Time 1 &#9679; 9:00 to 13:00 <br />
-                                    Time 2 &#9679; 15:00 to 19:00
+                                    Time 1 &nbsp;&nbsp;&#9679;&nbsp;&nbsp; 9:00 to 13:00 <br />
+                                    Time 2 &nbsp;&nbsp;&#9679;&nbsp;&nbsp; 15:00 to 19:00
                                 </font>
                             </div>
                         </div>

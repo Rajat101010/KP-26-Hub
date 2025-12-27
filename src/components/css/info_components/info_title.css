@@ -1,5 +1,7 @@
 .info_all_parent {
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     align-items: center;
     text-align: center;
+    border-bottom: 1px solid #2F2A1C;
+    padding-bottom: 0.8rem;
 }
