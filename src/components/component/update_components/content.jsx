@@ -52,8 +52,8 @@ function UpdateContent() {
         },
         {
             id: 5,
-            title: "Transportation",
-            description: "All transportation services will remain inactive from 25 December 2025 to 1 January 2026",
+            title: "New Beginnings, New Joys",
+            description: "Wishing you a joyful New Year filled with success, happiness, good health, and exciting new opportunities ahead",
             active: true,
             startTime: "All Day",
             endTime: "",
