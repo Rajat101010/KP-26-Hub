@@ -43,5 +43,28 @@
     text-align: right;
 }
 
+.food_one_by_one {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 7px;
+    flex-wrap: wrap;
+}
 
+@media(max-width: 768px) {
+    .food_one_by_one {
+        gap: 4px;
+    }
+}
 
+.food_one_by_one div {
+    /* background-color: #0A0A0A; */
+    border: 1px solid #fafad2;
+
+    padding: 2px 8px;
+    border-radius: 10000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}

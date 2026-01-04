@@ -1,6 +1,8 @@
 import './App.css';
 import React from "react";
 import dayjs from "dayjs";
+import ScrollToTop from "./features/ScrollToTop";
+
 
 //routers(page changing)
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
@@ -42,6 +44,7 @@ function App() {
     <main style={{ backgroundColor: "#121212", height: "auto", minHeight: '10vh', color: "white" }}>
 
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<BusNow />} />
           <Route path='/bus-all' element={<BusAll />} />

@@ -3,6 +3,24 @@ import { motion } from "framer-motion";
 import Schedule from "../Schedule";
 import "../../../../components/css/food_components/day_content.css";
 
+
+import { TbMeat } from "react-icons/tb";
+import { LuLeaf } from "react-icons/lu";
+import { IoFishOutline } from "react-icons/io5";
+// import { TbEggs } from "react-icons/tb";
+import { BsEggFried } from "react-icons/bs";
+// import { LuMilk } from "react-icons/lu";
+import { BsCupHot } from "react-icons/bs";
+// import { PiCookie } from "react-icons/pi";
+import { LiaCookieSolid } from "react-icons/lia";
+import { PiBread } from "react-icons/pi";
+import { CiBowlNoodles } from "react-icons/ci";
+import { BiBowlRice } from "react-icons/bi";
+// import { LuBanana } from "react-icons/lu";
+
+
+
+
 function WednesdayContent() {
     const breakfast = [
         { start: "07:00", end: "10:00" }
@@ -40,11 +58,14 @@ function WednesdayContent() {
                             </div>
                             <div className="menu_sub_part_div3">
                                 <font className='font_menu_description'>
-                                    <ul>
-                                        <li>Egg Omlet, Veg Cutlet</li>
-                                        <li>Bread, Jam, Butter</li>
-                                        <li>Tea</li>
-                                    </ul>
+                                    <div className="food_one_by_one">
+                                        <div>Egg Omlet <BsEggFried /></div>
+                                        <div>Veg Cutlet <LuLeaf /></div>
+                                        <div>Bread <PiBread size={14} /></div>
+                                        <div>Jam <LuLeaf /></div>
+                                        <div>Butter <LuLeaf /></div>
+                                        <div>Tea <BsCupHot /></div>
+                                    </div>
                                 </font>
                             </div>
                         </div>
@@ -68,11 +89,16 @@ function WednesdayContent() {
                             </div>
                             <div className="menu_sub_part_div3">
                                 <font className='font_menu_description'>
-                                    <ul>
-                                        <li>Rice, Roti, Dal, Mix Boiled Veg</li>
-                                        <li>Cabbage Alu Masala, Fish Masala</li>
-                                        <li>Frimes & Salad</li>
-                                    </ul>
+                                    <div className="food_one_by_one">
+                                        <div>Rice <BiBowlRice /></div>
+                                        <div>Roti <LiaCookieSolid /></div>
+                                        <div>Dal <LuLeaf /></div>
+                                        <div>Mix Boiled Veg <LuLeaf /></div>
+                                        <div>Cabbage Alu Masala <LuLeaf /></div>
+                                        <div>Fish Masala <IoFishOutline size={14}/></div>
+                                        <div>Salad <LuLeaf /></div>
+                                        <div>Frimes <LuLeaf /></div>
+                                    </div>
                                 </font>
                             </div>
                         </div>
@@ -96,10 +122,10 @@ function WednesdayContent() {
                             </div>
                             <div className="menu_sub_part_div3">
                                 <font className='font_menu_description'>
-                                    <ul>
-                                        <li>Veg Hakka Noodles</li>
-                                        <li>Coffee</li>
-                                    </ul>
+                                    <div className="food_one_by_one">
+                                        <div>Veg Hakka Noodles <CiBowlNoodles size={17}/></div>
+                                        <div>Coffee <BsCupHot /></div>
+                                    </div>
                                 </font>
                             </div>
                         </div>
@@ -123,11 +149,15 @@ function WednesdayContent() {
                             </div>
                             <div className="menu_sub_part_div3">
                                 <font className='font_menu_description'>
-                                    <ul>
-                                        <li>Rice, Roti, Dal, Mix Boiled Veg</li>
-                                        <li>Chicken Masala, Paneer Masala</li>
-                                        <li>Rasgulla</li>
-                                    </ul>
+                                    <div className="food_one_by_one">
+                                        <div>Rice <BiBowlRice /></div>
+                                        <div>Roti <LiaCookieSolid /></div>
+                                        <div>Dal <LuLeaf /></div>
+                                        <div>Mix Boiled Veg <LuLeaf /></div>
+                                        <div>Chicken Masala <TbMeat /></div>
+                                        <div>Paneer Masala <LuLeaf /></div>
+                                        <div>Rasgulla <LiaCookieSolid /></div>
+                                    </div>
                                 </font>
                             </div>
                         </div>

@@ -3,6 +3,22 @@ import { motion } from "framer-motion";
 import Schedule from "../Schedule";
 import "../../../../components/css/food_components/day_content.css";
 
+
+// import { TbMeat } from "react-icons/tb";
+import { LuLeaf } from "react-icons/lu";
+// import { IoFishOutline } from "react-icons/io5";
+import { TbEggs } from "react-icons/tb";
+// import { BsEggFried } from "react-icons/bs";
+// import { LuMilk } from "react-icons/lu";
+import { BsCupHot } from "react-icons/bs";
+// import { PiCookie } from "react-icons/pi";
+import { LiaCookieSolid } from "react-icons/lia";
+import { PiBread } from "react-icons/pi";
+import { BiBowlRice } from "react-icons/bi";
+// import { LuBanana } from "react-icons/lu";
+
+
+
 function TuesdayContent() {
     const breakfast = [
         { start: "07:00", end: "10:00" }
@@ -40,11 +56,15 @@ function TuesdayContent() {
                             </div>
                             <div className="menu_sub_part_div3">
                                 <font className='font_menu_description'>
-                                    <ul>
-                                        <li>Pao Bhaji / Chole Bhature</li>
-                                        <li>Bread, Jam, Butter, Boiled Egg</li>
-                                        <li>Coffee</li>
-                                    </ul>
+                                    <div className="food_one_by_one">
+                                        <div>Pao Bhaji <LuLeaf /></div>
+                                        <div>Chole Bhature <LuLeaf /></div>
+                                        <div>Bread <PiBread size={14} /></div>
+                                        <div>Jam <LuLeaf /></div>
+                                        <div>Butter <LuLeaf /></div>
+                                        <div>Boiled Egg <TbEggs /></div>
+                                        <div>Coffee <BsCupHot /></div>
+                                    </div>
                                 </font>
                             </div>
                         </div>
@@ -68,11 +88,15 @@ function TuesdayContent() {
                             </div>
                             <div className="menu_sub_part_div3">
                                 <font className='font_menu_description'>
-                                    <ul>
-                                        <li>Rice, Roti, Dal, Mix Boiled Veg</li>
-                                        <li>Matar Paneer, French Fries</li>
-                                        <li>Salad</li>
-                                    </ul>
+                                    <div className="food_one_by_one">
+                                        <div>Rice <BiBowlRice /></div>
+                                        <div>Roti <LiaCookieSolid /></div>
+                                        <div>Dal <LuLeaf /></div>
+                                        <div>Mix Boiled Veg <LuLeaf /></div>
+                                        <div>Matar Paneer <LuLeaf /></div>
+                                        <div>French Fries <LuLeaf /></div>
+                                        <div>Salad <LuLeaf /></div>
+                                    </div>
                                 </font>
                             </div>
                         </div>
@@ -96,10 +120,10 @@ function TuesdayContent() {
                             </div>
                             <div className="menu_sub_part_div3">
                                 <font className='font_menu_description'>
-                                    <ul>
-                                        <li>Red Pasta (with onion & tomato)</li>
-                                        <li>Lemon Tea</li>
-                                    </ul>
+                                    <div className="food_one_by_one">
+                                        <div>Red Sauce Pasta <LuLeaf /></div>
+                                        <div>Lemon Tea <BsCupHot /></div>
+                                    </div>
                                 </font>
                             </div>
                         </div>
@@ -123,11 +147,15 @@ function TuesdayContent() {
                             </div>
                             <div className="menu_sub_part_div3">
                                 <font className='font_menu_description'>
-                                    <ul>
-                                        <li>Rice, Roti, Dal, Mix Boiled Veg</li>
-                                        <li>Soyabean Alu Masala, Crispy Veg Chips</li>
-                                        <li>Semei Kheer</li>
-                                    </ul>
+                                    <div className="food_one_by_one">
+                                        <div>Rice <BiBowlRice /></div>
+                                        <div>Roti <LiaCookieSolid /></div>
+                                        <div>Dal <LuLeaf /></div>
+                                        <div>Mix Boiled Veg <LuLeaf /></div>
+                                        <div>Soyabean Alu Masala <LuLeaf /></div>
+                                        <div>Crispy Veg Chips <LuLeaf /></div>
+                                        <div>Semei Kheer <LuLeaf /></div>
+                                    </div>
                                 </font>
                             </div>
                         </div>
