@@ -58,8 +58,9 @@
 }
 
 .food_one_by_one div {
-    /* background-color: #0A0A0A; */
-    border: 1px solid #fafad2;
+    border: 1px solid #34342A;
+    box-shadow: 0px 0px 2px black;
+
 
     padding: 2px 8px;
     border-radius: 10000px;
