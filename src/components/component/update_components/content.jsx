@@ -54,7 +54,7 @@ function UpdateContent() {
             id: 5,
             title: "New Beginnings, New Joys",
             description: "Wishing you a joyful New Year filled with success, happiness, good health, and exciting new opportunities ahead",
-            active: true,
+            active: false,
             startTime: "All Day",
             endTime: "",
         }
