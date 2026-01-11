@@ -3,23 +3,10 @@ import { motion } from "framer-motion";
 import Schedule from "../Schedule";
 import "../../../../components/css/food_components/day_content.css";
 
-
-import { TbMeat } from "react-icons/tb";
-import { LuLeaf } from "react-icons/lu";
-import { IoFishOutline } from "react-icons/io5";
-import { TbEggs } from "react-icons/tb";
-// import { BsEggFried } from "react-icons/bs";
-// import { LuMilk } from "react-icons/lu";
-import { BsCupHot } from "react-icons/bs";
-// import { PiCookie } from "react-icons/pi";
-import { LiaCookieSolid } from "react-icons/lia";
 import { PiBread } from "react-icons/pi";
-import { CiBowlNoodles } from "react-icons/ci";
-import { BiBowlRice } from "react-icons/bi";
-// import { LuBanana } from "react-icons/lu";
-
-
-
+import { PiBowlFood } from "react-icons/pi";
+import { BsCupHot } from "react-icons/bs";
+import { LiaCookieSolid } from "react-icons/lia";
 
 function FridayContent() {
     const breakfast = [
@@ -46,11 +33,14 @@ function FridayContent() {
                         transition={{ duration: 0.25, ease: "easeInOut" }}
                     >
                         <div className="menu_div1">
-                            <div className="menu_sub_part_div1">
-                                <font className='font_menu_title_name'>
+                            <font className='font_menu_title_name'>
+                                <div className="menu_sub_part_div1">
                                     Breakfast
-                                </font>
-                            </div>
+                                    <div>
+                                        <PiBread />
+                                    </div>
+                                </div>
+                            </font>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
                                     <Schedule dayIndex={5} timeSlots={breakfast} />
@@ -59,13 +49,13 @@ function FridayContent() {
                             <div className="menu_sub_part_div3">
                                 <font className='font_menu_description'>
                                     <div className="food_one_by_one">
-                                        <div>Veg Noodles <CiBowlNoodles size={17} /></div>
-                                        <div>Ketchup <LuLeaf /></div>
-                                        <div>Bread <PiBread size={14} /></div>
-                                        <div>Jam <LuLeaf /></div>
-                                        <div>Butter <LuLeaf /></div>
-                                        <div>Boiled Egg <TbEggs /></div>
-                                        <div>Tea <BsCupHot /></div>
+                                        <div>Veg Noodles</div>
+                                        <div>Ketchup</div>
+                                        <div>Bread</div>
+                                        <div>Jam</div>
+                                        <div>Butter</div>
+                                        <div>Boiled Egg</div>
+                                        <div>Tea</div>
                                     </div>
                                 </font>
                             </div>
@@ -78,11 +68,14 @@ function FridayContent() {
                         transition={{ duration: 0.4, ease: "easeInOut" }}
                     >
                         <div className="menu_div2">
-                            <div className="menu_sub_part_div1">
-                                <font className='font_menu_title_name'>
+                            <font className='font_menu_title_name'>
+                                <div className="menu_sub_part_div1">
                                     Lunch
-                                </font>
-                            </div>
+                                    <div>
+                                        <PiBowlFood />
+                                    </div>
+                                </div>
+                            </font>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
                                     <Schedule dayIndex={5} timeSlots={lunch} />
@@ -91,14 +84,14 @@ function FridayContent() {
                             <div className="menu_sub_part_div3">
                                 <font className='font_menu_description'>
                                     <div className="food_one_by_one">
-                                        <div>Rice <BiBowlRice /></div>
-                                        <div>Roti <LiaCookieSolid /></div>
-                                        <div>Dal <LuLeaf /></div>
-                                        <div>Mix Boiled Veg <LuLeaf /></div>
-                                        <div>Fish Masala <IoFishOutline size={14}/></div>
-                                        <div>Besan Alu Curry <LuLeaf /></div>
-                                        <div>Seasonal Bhaji <LuLeaf /></div>
-                                        <div>Frimes <LuLeaf /></div>
+                                        <div>Rice</div>
+                                        <div>Roti</div>
+                                        <div>Dal</div>
+                                        <div>Mix Boiled Veg</div>
+                                        <div>Fish Masala</div>
+                                        <div>Besan Alu Curry</div>
+                                        <div>Seasonal Bhaji</div>
+                                        <div>Frimes</div>
                                     </div>
                                 </font>
                             </div>
@@ -111,11 +104,14 @@ function FridayContent() {
                         transition={{ duration: 0.55, ease: "easeInOut" }}
                     >
                         <div className="menu_div3">
-                            <div className="menu_sub_part_div1">
-                                <font className='font_menu_title_name'>
+                            <font className='font_menu_title_name'>
+                                <div className="menu_sub_part_div1">
                                     Snacks
-                                </font>
-                            </div>
+                                    <div>
+                                        <BsCupHot size={16} />
+                                    </div>
+                                </div>
+                            </font>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
                                     <Schedule dayIndex={5} timeSlots={Snacks} />
@@ -124,8 +120,8 @@ function FridayContent() {
                             <div className="menu_sub_part_div3">
                                 <font className='font_menu_description'>
                                     <div className="food_one_by_one">
-                                        <div>Chicken Soup <TbMeat /></div>
-                                        <div>Veg Soup <LuLeaf /></div>
+                                        <div>Chicken Soup</div>
+                                        <div>Veg Soup</div>
                                     </div>
                                 </font>
                             </div>
@@ -138,11 +134,14 @@ function FridayContent() {
                         transition={{ duration: 0.7, ease: "easeInOut" }}
                     >
                         <div className="menu_div4">
-                            <div className="menu_sub_part_div1">
-                                <font className='font_menu_title_name'>
+                            <font className='font_menu_title_name'>
+                                <div className="menu_sub_part_div1">
                                     Dinner
-                                </font>
-                            </div>
+                                    <div>
+                                        <LiaCookieSolid />
+                                    </div>
+                                </div>
+                            </font>
                             <div className="menu_sub_part_div2">
                                 <font className='font_menu_time'>
                                     <Schedule dayIndex={5} timeSlots={Dinner} />
@@ -151,9 +150,9 @@ function FridayContent() {
                             <div className="menu_sub_part_div3">
                                 <font className='font_menu_description'>
                                     <div className="food_one_by_one">
-                                        <div>Chicken Biryani <TbMeat /></div>
-                                        <div>Mix Veg Biryani <LuLeaf /></div>
-                                        <div>Raita <LuLeaf /></div>
+                                        <div>Chicken Biryani</div>
+                                        <div>Mix Veg Biryani</div>
+                                        <div>Raita</div>
                                     </div>
                                 </font>
                             </div>

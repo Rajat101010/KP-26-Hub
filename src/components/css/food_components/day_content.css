@@ -69,3 +69,14 @@
     align-items: center;
     gap: 5px;
 }
+
+
+.menu_sub_part_div1 {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.menu_sub_part_div1 div{
+    padding: 0px 0px 3px 5px;
+}
