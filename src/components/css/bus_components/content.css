@@ -6,10 +6,17 @@
 .bus_number {
     margin-left: 0.5rem;
     background-color: #b8860b;
-    padding: 0.2rem;
-    padding-top: 0.1rem;
+    padding: 0.1rem 0.2rem;
     border-radius: 3px;
 }
+
+.from_to_arrow {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .drop_down_menu {
     padding: 8px 15px;

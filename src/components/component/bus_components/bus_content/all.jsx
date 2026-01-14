@@ -155,7 +155,11 @@ function AllBusContent() {
                                     <div className="menu_div1">
                                         <div className="menu_sub_part_div1">
                                             <font className="font_menu_title_name">
-                                                {bus.from} <FaArrowRightLong /> {bus.to}
+                                                <div className="from_to_arrow">
+                                                    {bus.from}
+                                                    <FaArrowRightLong /> 
+                                                    {bus.to}
+                                                </div>
                                             </font>
                                         </div>
                                         <div className="menu_sub_part_div2">

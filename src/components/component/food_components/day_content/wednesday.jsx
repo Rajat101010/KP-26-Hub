@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import Schedule from "../Schedule";
 import "../../../../components/css/food_components/day_content.css";
 
@@ -26,12 +24,8 @@ function WednesdayContent() {
         <main>
             <center>
                 <div className="menu_parent">
-                    <motion.div
-                        initial={{ y: 200, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: -200, opacity: 0 }}
-                        transition={{ duration: 0.25, ease: "easeInOut" }}
-                    >
+               
+               
                         <div className="menu_div1">
                             <font className='font_menu_title_name'>
                                 <div className="menu_sub_part_div1">
@@ -59,13 +53,8 @@ function WednesdayContent() {
                                 </font>
                             </div>
                         </div>
-                    </motion.div>
-                    <motion.div
-                        initial={{ y: 200, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: -200, opacity: 0 }}
-                        transition={{ duration: 0.4, ease: "easeInOut" }}
-                    >
+             
+             
                         <div className="menu_div2">
                             <font className='font_menu_title_name'>
                                 <div className="menu_sub_part_div1">
@@ -95,13 +84,8 @@ function WednesdayContent() {
                                 </font>
                             </div>
                         </div>
-                    </motion.div>
-                    <motion.div
-                        initial={{ y: 200, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: -200, opacity: 0 }}
-                        transition={{ duration: 0.55, ease: "easeInOut" }}
-                    >
+             
+             
                         <div className="menu_div3">
                             <font className='font_menu_title_name'>
                                 <div className="menu_sub_part_div1">
@@ -125,13 +109,8 @@ function WednesdayContent() {
                                 </font>
                             </div>
                         </div>
-                    </motion.div>
-                    <motion.div
-                        initial={{ y: 200, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: -200, opacity: 0 }}
-                        transition={{ duration: 0.7, ease: "easeInOut" }}
-                    >
+                 
+                 
                         <div className="menu_div4">
                              <font className='font_menu_title_name'>
                                 <div className="menu_sub_part_div1">
@@ -160,7 +139,6 @@ function WednesdayContent() {
                                 </font>
                             </div>
                         </div>
-                    </motion.div>
                 </div>
 
             </center>

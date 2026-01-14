@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import Schedule from "../Schedule";
 import "../../../../components/css/food_components/day_content.css";
 
@@ -26,138 +24,116 @@ function FridayContent() {
         <main>
             <center>
                 <div className="menu_parent">
-                    <motion.div
-                        initial={{ y: 200, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: -200, opacity: 0 }}
-                        transition={{ duration: 0.25, ease: "easeInOut" }}
-                    >
-                        <div className="menu_div1">
-                            <font className='font_menu_title_name'>
-                                <div className="menu_sub_part_div1">
-                                    Breakfast
-                                    <div>
-                                        <PiBread />
-                                    </div>
+                    <div className="menu_div1">
+                        <font className='font_menu_title_name'>
+                            <div className="menu_sub_part_div1">
+                                Breakfast
+                                <div>
+                                    <PiBread />
+                                </div>
+                            </div>
+                        </font>
+                        <div className="menu_sub_part_div2">
+                            <font className='font_menu_time'>
+                                <Schedule dayIndex={5} timeSlots={breakfast} />
+                            </font>
+                        </div>
+                        <div className="menu_sub_part_div3">
+                            <font className='font_menu_description'>
+                                <div className="food_one_by_one">
+                                    <div>Veg Noodles</div>
+                                    <div>Ketchup</div>
+                                    <div>Bread</div>
+                                    <div>Jam</div>
+                                    <div>Butter</div>
+                                    <div>Boiled Egg</div>
+                                    <div>Tea</div>
                                 </div>
                             </font>
-                            <div className="menu_sub_part_div2">
-                                <font className='font_menu_time'>
-                                    <Schedule dayIndex={5} timeSlots={breakfast} />
-                                </font>
-                            </div>
-                            <div className="menu_sub_part_div3">
-                                <font className='font_menu_description'>
-                                    <div className="food_one_by_one">
-                                        <div>Veg Noodles</div>
-                                        <div>Ketchup</div>
-                                        <div>Bread</div>
-                                        <div>Jam</div>
-                                        <div>Butter</div>
-                                        <div>Boiled Egg</div>
-                                        <div>Tea</div>
-                                    </div>
-                                </font>
-                            </div>
                         </div>
-                    </motion.div>
-                    <motion.div
-                        initial={{ y: 200, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: -200, opacity: 0 }}
-                        transition={{ duration: 0.4, ease: "easeInOut" }}
-                    >
-                        <div className="menu_div2">
-                            <font className='font_menu_title_name'>
-                                <div className="menu_sub_part_div1">
-                                    Lunch
-                                    <div>
-                                        <PiBowlFood />
-                                    </div>
+                    </div>
+
+
+                    <div className="menu_div2">
+                        <font className='font_menu_title_name'>
+                            <div className="menu_sub_part_div1">
+                                Lunch
+                                <div>
+                                    <PiBowlFood />
+                                </div>
+                            </div>
+                        </font>
+                        <div className="menu_sub_part_div2">
+                            <font className='font_menu_time'>
+                                <Schedule dayIndex={5} timeSlots={lunch} />
+                            </font>
+                        </div>
+                        <div className="menu_sub_part_div3">
+                            <font className='font_menu_description'>
+                                <div className="food_one_by_one">
+                                    <div>Rice</div>
+                                    <div>Roti</div>
+                                    <div>Dal</div>
+                                    <div>Mix Boiled Veg</div>
+                                    <div>Fish Masala</div>
+                                    <div>Besan Alu Curry</div>
+                                    <div>Seasonal Bhaji</div>
+                                    <div>Frimes</div>
                                 </div>
                             </font>
-                            <div className="menu_sub_part_div2">
-                                <font className='font_menu_time'>
-                                    <Schedule dayIndex={5} timeSlots={lunch} />
-                                </font>
-                            </div>
-                            <div className="menu_sub_part_div3">
-                                <font className='font_menu_description'>
-                                    <div className="food_one_by_one">
-                                        <div>Rice</div>
-                                        <div>Roti</div>
-                                        <div>Dal</div>
-                                        <div>Mix Boiled Veg</div>
-                                        <div>Fish Masala</div>
-                                        <div>Besan Alu Curry</div>
-                                        <div>Seasonal Bhaji</div>
-                                        <div>Frimes</div>
-                                    </div>
-                                </font>
-                            </div>
                         </div>
-                    </motion.div>
-                    <motion.div
-                        initial={{ y: 200, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: -200, opacity: 0 }}
-                        transition={{ duration: 0.55, ease: "easeInOut" }}
-                    >
-                        <div className="menu_div3">
-                            <font className='font_menu_title_name'>
-                                <div className="menu_sub_part_div1">
-                                    Snacks
-                                    <div>
-                                        <BsCupHot size={16} />
-                                    </div>
+                    </div>
+
+
+                    <div className="menu_div3">
+                        <font className='font_menu_title_name'>
+                            <div className="menu_sub_part_div1">
+                                Snacks
+                                <div>
+                                    <BsCupHot size={16} />
+                                </div>
+                            </div>
+                        </font>
+                        <div className="menu_sub_part_div2">
+                            <font className='font_menu_time'>
+                                <Schedule dayIndex={5} timeSlots={Snacks} />
+                            </font>
+                        </div>
+                        <div className="menu_sub_part_div3">
+                            <font className='font_menu_description'>
+                                <div className="food_one_by_one">
+                                    <div>Chicken Soup</div>
+                                    <div>Veg Soup</div>
                                 </div>
                             </font>
-                            <div className="menu_sub_part_div2">
-                                <font className='font_menu_time'>
-                                    <Schedule dayIndex={5} timeSlots={Snacks} />
-                                </font>
-                            </div>
-                            <div className="menu_sub_part_div3">
-                                <font className='font_menu_description'>
-                                    <div className="food_one_by_one">
-                                        <div>Chicken Soup</div>
-                                        <div>Veg Soup</div>
-                                    </div>
-                                </font>
-                            </div>
                         </div>
-                    </motion.div>
-                    <motion.div
-                        initial={{ y: 200, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: -200, opacity: 0 }}
-                        transition={{ duration: 0.7, ease: "easeInOut" }}
-                    >
-                        <div className="menu_div4">
-                            <font className='font_menu_title_name'>
-                                <div className="menu_sub_part_div1">
-                                    Dinner
-                                    <div>
-                                        <LiaCookieSolid />
-                                    </div>
+                    </div>
+
+
+                    <div className="menu_div4">
+                        <font className='font_menu_title_name'>
+                            <div className="menu_sub_part_div1">
+                                Dinner
+                                <div>
+                                    <LiaCookieSolid />
+                                </div>
+                            </div>
+                        </font>
+                        <div className="menu_sub_part_div2">
+                            <font className='font_menu_time'>
+                                <Schedule dayIndex={5} timeSlots={Dinner} />
+                            </font>
+                        </div>
+                        <div className="menu_sub_part_div3">
+                            <font className='font_menu_description'>
+                                <div className="food_one_by_one">
+                                    <div>Chicken Biryani</div>
+                                    <div>Mix Veg Biryani</div>
+                                    <div>Raita</div>
                                 </div>
                             </font>
-                            <div className="menu_sub_part_div2">
-                                <font className='font_menu_time'>
-                                    <Schedule dayIndex={5} timeSlots={Dinner} />
-                                </font>
-                            </div>
-                            <div className="menu_sub_part_div3">
-                                <font className='font_menu_description'>
-                                    <div className="food_one_by_one">
-                                        <div>Chicken Biryani</div>
-                                        <div>Mix Veg Biryani</div>
-                                        <div>Raita</div>
-                                    </div>
-                                </font>
-                            </div>
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
 
             </center>

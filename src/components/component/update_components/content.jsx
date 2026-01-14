@@ -112,7 +112,7 @@ function UpdateContent() {
 
                                 <div className="info_sub_part_div2"></div>
 
-                                <div className="info_sub_part_div3">
+                                <div className="info_sub_part_div4">
                                     <font className="font_info_description">
                                         {section.description}
                                     </font>
