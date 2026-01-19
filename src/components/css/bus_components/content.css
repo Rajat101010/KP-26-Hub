@@ -75,3 +75,26 @@
     transform: translateY(-50%) rotate(45deg);
     pointer-events: none;
 }
+
+
+.bus_bus_only {
+    background-image:
+        linear-gradient(rgba(0, 0, 0.1, 0.8),
+            rgba(0.7, 0.7, 0.7, 0.76)),
+        url("../../../assets/bus_background_img.webp");
+
+    background-size: 50%;
+    background-position: center top;
+}
+
+@media(max-width: 768px) {
+    .bus_bus_only {
+        background-image:
+            linear-gradient(rgba(0, 0, 0.1, 0.76),
+                rgba(0.7, 0.7, 0.7, 0.66)),
+            url("../../../assets/bus_background_img.webp");
+
+        background-size: 60%;
+        background-position: center top;
+    }
+}

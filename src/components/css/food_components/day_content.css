@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: 8px;
+    gap: 18px;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 2rem;
@@ -13,7 +13,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        gap: 10px;
+        gap: 15px;
         margin-left: 1rem;
         margin-right: 1rem;
         margin-top: 1rem;
@@ -32,6 +32,10 @@
     background-color: #1E1E1E;
     grid-template-columns: repeat(2, 1fr);
     animation: slideUp 0.3s ease-out forwards;
+}
+
+.menu_menu_only {
+    cursor: pointer;
 }
 
 @keyframes slideUp {
@@ -57,16 +61,17 @@
 }
 
 .food_one_by_one {
-    margin-top: 1rem;
+    margin-top: 0.7rem;
     display: flex;
     justify-content: flex-start;
     gap: 7px;
     flex-wrap: wrap;
+    /* background-color: yellowgreen; */
 }
 
 @media(max-width: 768px) {
     .food_one_by_one {
-        gap: 4px;
+        gap: 3px;
     }
 }
 
@@ -76,7 +81,7 @@
     background-color: #141414;
 
 
-    padding: 3px 9px;
+    padding: 2px 7px;
     border-radius: 10000px;
     display: flex;
     justify-content: center;
@@ -93,4 +98,196 @@
 
 .menu_sub_part_div1 div {
     padding: 0px 0px 3px 5px;
+}
+
+
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    pointer-events: all;
+}
+
+.mini_screen {
+    background-color: #1E1E1E;
+    width: 100%;
+    /* box-shadow: 0px 0px 8px #fafad2; */
+    box-shadow: 0px 0px 8px black;
+    border: 1px solid #fafad2;
+    margin: 0rem 5rem 5rem 5rem;
+    border-radius: 18px;
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+    .mini_screen {
+        margin: 0rem 0.5rem 5rem 0.5rem;
+        padding: 1rem 1rem 0rem 1rem;
+    }
+}
+
+.overlay_food_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #fafad2;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .overlay_food_title {
+        padding-bottom: 15px;
+    }
+}
+
+.overlay_time_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_itrms_overlay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.menu_itrms_overlay_icon {
+    display: flex;
+    padding-top: 1px;
+}
+
+.menu_itrms_overlay_icon svg {
+    display: block;
+}
+
+.food_images_parent {
+    padding-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 1rem 0rem;
+    justify-content: center;
+    gap: 15px;
+    /* background-color: yellowgreen; */
+}
+
+.food_images_parent div {
+    width: 100%;
+    /* background-color: violet; */
+}
+
+
+@media (max-width: 768px) {
+    .food_images_parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.food_image_image {
+    width: 100%;
+}
+
+.food_name_div {
+    margin-top: -0.3rem;
+}
+
+.food_name_div {
+    max-width: 10vw;
+    /* width: 5%; */
+    white-space: nowrap;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, black 80%, transparent);
+    -webkit-mask-image: linear-gradient(to right, black 80%, transparent);
+}
+
+@media (max-width: 768px) {
+    .food_name_div {
+        max-width: 25vw;
+    }
+}
+
+
+
+
+
+
+
+.menu_div1 {
+    position: relative;
+}
+
+.menu_div1 .click_text label {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    color: #fafad2;
+    font-size: 9px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    background: transparent;
+    padding: 0 4px;
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 4px #fafad2;
+    border-radius: 1000px;
+    background-color: #1E1E1E;
+}
+
+@media (max-width: 768px) {
+    .menu_div1 .click_text label {
+        box-shadow: 0px 0px 2px #fafad2;
+    }
+
+}
+
+
+.mini_screen {
+    width: 100%;
+    background-image:
+        linear-gradient(rgba(0, 0, 0.1, 0.86),
+            rgba(0.7, 0.7, 0.7, 0.8)),
+        url("../../../assets/backgroung_img.webp");
+
+    background-size: 30%;
+    background-position: center top;
+}
+
+@media (max-width: 768px) {
+    .mini_screen {
+        background-image:
+            linear-gradient(rgba(0, 0, 0.1, 0.8),
+                rgba(0.7, 0.7, 0.7, 0.76)),
+            url("../../../assets/backgroung_img.webp");
+        background-size: 50%;
+    }
+}
+
+
+.menu_menu_only {
+    /* width: 100%; */
+    background-image:   
+        linear-gradient(rgba(0, 0, 0.1, 0.86),
+            rgba(0.7, 0.7, 0.7, 0.8)),
+        url("../../../assets/backgroung_img.webp");
+
+    background-size: 40%;
+    background-position: center top;
+}
+
+@media (max-width: 768px){
+    .menu_menu_only {
+        background-image:
+            linear-gradient(rgba(0, 0, 0.1, 0.82),
+                rgba(0.7, 0.7, 0.7, 0.78)),
+            url("../../../assets/backgroung_img.webp");
+        background-size: 50%;
+    }
 }

@@ -191,3 +191,15 @@
         font-weight: 600;
     }
 }
+
+.font_menu_description_over {
+    color: #B0B0B0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media(max-width: 768px) {
+    .font_menu_description_over {
+        font-size: 0.9rem;
+    }
+}

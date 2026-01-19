@@ -91,7 +91,7 @@ function NowActiveBuses() {
                                         animate={{ y: 0, opacity: 1 }}
                                         transition={{ duration: 0.25, ease: "easeInOut" }}
                                     >
-                                        <div className="menu_div1">
+                                        <div className="menu_div1 bus_bus_only">
                                             <div className="menu_sub_part_div1">
                                                 <font className="font_menu_title_name">
                                                     {bus.from} <FaArrowRightLong /> {bus.to}

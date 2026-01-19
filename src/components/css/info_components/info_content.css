@@ -78,3 +78,23 @@
   text-decoration: none;
   color: inherit;
 }
+
+.info_info_background{
+    background-image:   
+        linear-gradient(rgba(0, 0, 0.1, 0.86),
+            rgba(0.7, 0.7, 0.7, 0.8)),
+        url("../../../assets/info_background_img.webp");
+
+    background-size: 40%;
+    background-position: center top;
+}
+
+@media (max-width: 768px){
+    .info_info_background {
+        background-image:
+            linear-gradient(rgba(0, 0, 0.1, 0.8),
+                rgba(0.7, 0.7, 0.7, 0.76)),
+            url("../../../assets/info_background_img.webp");
+        background-size: 50%;
+    }
+}

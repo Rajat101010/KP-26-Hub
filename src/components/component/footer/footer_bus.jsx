@@ -46,6 +46,9 @@ function FooterBus() {
                             <font className='footer_item_font'>
                                 Update
                             </font>
+                            <div className="update_notice">
+                                <span style={{ fontSize: "13px" }}>&#11044;</span>
+                            </div>
                         </center>
                     </div>
                 </Link>

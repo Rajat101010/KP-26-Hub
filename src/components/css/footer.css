@@ -39,3 +39,20 @@
     color: #F3D9A4;
     cursor: pointer;
 }
+
+
+.update_notice {
+    margin-top: -3.1rem;
+    margin-right: -1.2rem;
+    color: #FFD700;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

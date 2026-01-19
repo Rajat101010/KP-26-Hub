@@ -13,7 +13,7 @@ function ContactContent() {
                 <div className="info_parent">
 
 
-                    <div className="info_div1">
+                    <div className="info_div1 info_info_background">
                         <div className="info_sub_part_div1">
                             <font className='font_menu_title_name'>
                                 Reception
@@ -34,7 +34,7 @@ function ContactContent() {
                     </div>
 
 
-                    <div className="info_div1">
+                    <div className="info_div1 info_info_background">
                         <div className="info_sub_part_div1">
                             <font className='font_menu_title_name'>
                                 Madana
@@ -55,7 +55,7 @@ function ContactContent() {
                     </div>
 
 
-                    <div className="info_div1">
+                    <div className="info_div1 info_info_background">
                         <div className="info_sub_part_div1">
                             <font className='font_menu_title_name'>
                                 Ananta
@@ -76,7 +76,7 @@ function ContactContent() {
                     </div>
 
 
-                    <div className="info_div1">
+                    <div className="info_div1 info_info_background">
                         <div className="info_sub_part_div1">
                             <font className='font_menu_title_name'>
                                 Dipu
@@ -97,7 +97,7 @@ function ContactContent() {
                     </div>
 
 
-                    <div className="info_div1">
+                    <div className="info_div1 info_info_background">
                         <div className="info_sub_part_div1">
                             <font className='font_menu_title_name'>
                                 Ajay
@@ -118,7 +118,7 @@ function ContactContent() {
                     </div>
 
 
-                    <div className="info_div1">
+                    <div className="info_div1 info_info_background">
                         <div className="info_sub_part_div1">
                             <font className='font_menu_title_name'>
                                 Pramod

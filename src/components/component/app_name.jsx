@@ -32,7 +32,7 @@ function AppName() {
         </div>
 
         <div className="download_icon_and_menu">
-          <div>
+          <div className="no-highlight">
             <font className='font_for_app_name_menu'>
               <InstallAppButton />
             </font>

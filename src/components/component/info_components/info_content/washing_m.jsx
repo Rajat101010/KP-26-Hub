@@ -8,7 +8,7 @@ function WashingMachineContent() {
             <center>
                 <div className="info_parent">
                   
-                        <div className="info_div2">
+                        <div className="info_div2 info_info_background">
                             <div className="info_sub_part_div1">
                                 <font className='font_menu_title_name'>
                                     Monday to Saturday
@@ -26,7 +26,7 @@ function WashingMachineContent() {
                             </div>
                         </div>
                   
-                        <div className="info_div2">
+                        <div className="info_div2 info_info_background">
                             <div className="info_sub_part_div1">
                                 <font className='font_menu_title_name'>
                                     Only Sunday

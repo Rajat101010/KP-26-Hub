@@ -55,7 +55,7 @@ export default function AddToHomeScreen() {
 
     // Android install
     if (!promptEvent) {
-      alert("Please reload the page to install the application");
+      alert("1. Tap Again \nOR\n2. Tap Menu → Add to Home Screen → Install");
       return;
     }
 

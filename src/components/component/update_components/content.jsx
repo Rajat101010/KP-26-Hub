@@ -20,6 +20,14 @@ function UpdateContent() {
     const infoSections = [
         {
             id: 1,
+            title: "App Update",
+            description: "Click on the Breakfast, Lunch, Snacks, or Dinner sections to explore images of the meals currently being served.",
+            active: true,
+            startTime: "All Day",
+            endTime: "",
+        },
+        {
+            id: 2,
             title: "Attendance",
             description: "Give your biometric attendance between 8:00 PM and 11:00 PM",
             active: true,
@@ -27,7 +35,7 @@ function UpdateContent() {
             endTime: "11:00 PM",
         },
         {
-            id: 2,
+            id: 3,
             title: "Shuttle Service",
             description: "Shuttle departs from the hostel at 9:00 PM for the Library",
             active: false,
@@ -35,7 +43,7 @@ function UpdateContent() {
             endTime: "9:00 PM",
         },
         {
-            id: 3,
+            id: 4,
             title: "Railway Bus",
             description: "Bus no. 32 departs from the hostel at 12:00 PM for the railway station",
             active: false,
@@ -43,20 +51,12 @@ function UpdateContent() {
             endTime: "",
         },
         {
-            id: 4,
+            id: 5,
             title: "Airport Bus",
             description: "Bus no. 32 departs from the hostel at 12:00 PM for the airport departure point",
             active: false,
             startTime: "09:00 PM",
             endTime: "11:00 PM",
-        },
-        {
-            id: 5,
-            title: "New Beginnings, New Joys",
-            description: "Wishing you a joyful New Year filled with success, happiness, good health, and exciting new opportunities ahead",
-            active: false,
-            startTime: "All Day",
-            endTime: "",
         }
     ];
 
@@ -103,7 +103,7 @@ function UpdateContent() {
                             exit={{ y: -200, opacity: 0 }}
                             transition={{ duration: 0.25, ease: "easeInOut" }}
                         >
-                            <div className="info_div2">
+                            <div className="info_div2 info_info_background">
                                 <div className="info_sub_part_div1">
                                     <font className="font_menu_title_name">
                                         {section.title}
