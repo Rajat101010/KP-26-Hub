@@ -36,6 +36,14 @@ function UpdateContent() {
         },
         {
             id: 3,
+            title: "Transportation",
+            description: "Buses are available only for examinations for the time being",
+            active: true,
+            startTime: "All Day",
+            endTime: "",
+        },
+        {
+            id: 3,
             title: "Shuttle Service",
             description: "Shuttle departs from the hostel at 9:00 PM for the Library",
             active: false,

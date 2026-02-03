@@ -3,9 +3,14 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import BusTimer from "../BusTimer";
 
 export const special_bus = [
-    // { id: 1, from: "H", to: "Library", time: { h: 15, m: 50 }, busNo: "Shuttle" },
+    { id: 1, from: "H", to: "Library", time: { h: 21, m: 35 }, busNo: "Shuttle" },
     // { id: 2, from: "H", to: "C 25", time: { h: 8, m: 35 }, busNo: "32" },
     // { id: 3, from: "C 25", to: "H", time: { h: 9, m: 0 }, busNo: "32" },
+    { id: 3, from: "H", to: "C 25", time: { h: 8, m: 40 }, busNo: "NA" },
+    { id: 4, from: "C 25", to: "H", time: { h: 11, m: 5 }, busNo: "NA" },
+
+    { id: 5, from: "H", to: "C 25", time: { h: 14, m: 40 }, busNo: "NA" },
+    { id: 6, from: "C 25", to: "H", time: { h: 17, m: 5 }, busNo: "NA" },
 ];
 
 function SpecialBus() {

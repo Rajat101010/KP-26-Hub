@@ -94,7 +94,11 @@ function NowActiveBuses() {
                                         <div className="menu_div1 bus_bus_only">
                                             <div className="menu_sub_part_div1">
                                                 <font className="font_menu_title_name">
-                                                    {bus.from} <FaArrowRightLong /> {bus.to}
+                                                    <div className="from_to_arrow">
+                                                        {bus.from}
+                                                        <FaArrowRightLong />
+                                                        {bus.to}
+                                                    </div>
                                                 </font>
                                             </div>
                                             <div className="menu_sub_part_div2">
@@ -127,7 +131,8 @@ function NowActiveBuses() {
                             })
                     ) : (
                         <div style={{ marginTop: "50px", fontSize: "18px", color: "#555" }}>
-                            No active buses right now
+                            {/* No active buses right now */}
+                            Buses are available only for examinations for the time being
                         </div>
                     )}
                 </div>
