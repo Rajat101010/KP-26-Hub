@@ -22,7 +22,6 @@ import roti from '../../../../assets/food_images/roti.webp';
 import dal from '../../../../assets/food_images/dal.webp';
 import boil_v from '../../../../assets/food_images/boil_v.webp';
 import veg_man from '../../../../assets/food_images/veg_man.webp';
-import saga_muga from '../../../../assets/food_images/saga_muga.webp';
 import alu_gobi from '../../../../assets/food_images/alu_gobi.webp';
 import alu_bhindi from '../../../../assets/food_images/alu_bhindi.webp';
 import curd from '../../../../assets/food_images/curd.webp';
@@ -206,7 +205,7 @@ function ThursdayContent() {
                                     </div>
                                 </div>
                                 <div className="food_images_parent">
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={bada}
                                             alt="food"
@@ -219,7 +218,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={ghuguni}
                                             alt="food"
@@ -232,7 +231,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={corn_flakes}
                                             alt="food"
@@ -245,7 +244,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={milk}
                                             alt="food"
@@ -258,7 +257,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={banana}
                                             alt="food"
@@ -271,7 +270,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={milk_tea}
                                             alt="food"
@@ -311,7 +310,7 @@ function ThursdayContent() {
                                     <div>Roti</div>
                                     <div>Dal</div>
                                     <div>Mix Boiled Veg</div>
-                                    <div>Veg Manchurian / Saga Muga</div>
+                                    <div>Veg Manchurian</div>
                                     <div>Alu Gobi Bhaji / Alu Bhindi Bhaji</div>
                                     <div>Curd</div>
                                 </div>
@@ -345,7 +344,7 @@ function ThursdayContent() {
                                     </div>
                                 </div>
                                 <div className="food_images_parent">
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={rice}
                                             alt="food"
@@ -358,7 +357,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={roti}
                                             alt="food"
@@ -371,7 +370,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={dal}
                                             alt="food"
@@ -384,7 +383,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={boil_v}
                                             alt="food"
@@ -397,7 +396,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={veg_man}
                                             alt="food"
@@ -410,20 +409,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
-                                        <img
-                                            src={saga_muga}
-                                            alt="food"
-                                            className='food_image_image'
-                                            loading="lazy"
-                                        />
-                                        <div className="food_name_div">
-                                            <font className='font_menu_description_over'>
-                                                Saga Muga
-                                            </font>
-                                        </div>
-                                    </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={alu_gobi}
                                             alt="food"
@@ -436,7 +422,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={alu_bhindi}
                                             alt="food"
@@ -449,7 +435,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={curd}
                                             alt="food"
@@ -518,7 +504,7 @@ function ThursdayContent() {
                                     </div>
                                 </div>
                                 <div className="food_images_parent">
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={sprouts}
                                             alt="food"
@@ -531,7 +517,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={maggi}
                                             alt="food"
@@ -544,7 +530,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={milk_tea}
                                             alt="food"
@@ -618,7 +604,7 @@ function ThursdayContent() {
                                     </div>
                                 </div>
                                 <div className="food_images_parent">
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={rice}
                                             alt="food"
@@ -631,7 +617,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={roti}
                                             alt="food"
@@ -644,7 +630,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={dal}
                                             alt="food"
@@ -657,7 +643,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={boil_v}
                                             alt="food"
@@ -670,7 +656,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={egg_m}
                                             alt="food"
@@ -683,7 +669,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={parwal_k}
                                             alt="food"
@@ -696,7 +682,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={paneer_k}
                                             alt="food"
@@ -709,7 +695,7 @@ function ThursdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={malpua}
                                             alt="food"

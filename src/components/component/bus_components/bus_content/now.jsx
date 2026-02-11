@@ -131,8 +131,8 @@ function NowActiveBuses() {
                             })
                     ) : (
                         <div style={{ marginTop: "50px", fontSize: "18px", color: "#555" }}>
-                            {/* No active buses right now */}
-                            Buses are available only for examinations for the time being
+                            No active buses right now
+                            {/* Buses are available only for examinations for the time being */}
                         </div>
                     )}
                 </div>

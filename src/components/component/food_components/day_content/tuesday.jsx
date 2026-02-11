@@ -12,6 +12,7 @@ import { ImSpoonKnife } from "react-icons/im";
 
 import chole from '../../../../assets/food_images/chole.webp';
 import bhature from '../../../../assets/food_images/bhature.webp';
+import boiled_egg from '../../../../assets/food_images/boiled_egg.webp';
 import bread from '../../../../assets/food_images/bread.webp';
 import jam from '../../../../assets/food_images/jam.webp';
 import butter from '../../../../assets/food_images/butter.webp';
@@ -28,8 +29,6 @@ import dahai_bundi from '../../../../assets/food_images/dahai_bundi.webp';
 import red_p from '../../../../assets/food_images/red_p.webp';
 import chuda from '../../../../assets/food_images/chuda.webp';
 
-import rice_jeera from '../../../../assets/food_images/rice_jeera.webp';
-import dal_f from '../../../../assets/food_images/dal_f.webp';
 import soya from '../../../../assets/food_images/soya.webp';
 import veg_chips from '../../../../assets/food_images/veg_chips.webp';
 import semai from '../../../../assets/food_images/semai.webp';
@@ -170,6 +169,7 @@ function TuesdayContent() {
                                 <div className="food_one_by_one">
                                     <div>Chole</div>
                                     <div>Bhature</div>
+                                    <div>Boiled Egg</div>
                                     <div>Bread</div>
                                     <div>Jam</div>
                                     <div>Butter</div>
@@ -204,7 +204,7 @@ function TuesdayContent() {
                                     </div>
                                 </div>
                                 <div className="food_images_parent">
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={chole}
                                             alt="food"
@@ -217,7 +217,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={bhature}
                                             alt="food"
@@ -230,7 +230,20 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
+                                        <img
+                                            src={boiled_egg}
+                                            alt="food"
+                                            className='food_image_image'
+                                            loading="lazy"
+                                        />
+                                        <div className="food_name_div">
+                                            <font className='font_menu_description_over'>
+                                                Boiled Egg
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={bread}
                                             alt="food"
@@ -243,7 +256,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={jam}
                                             alt="food"
@@ -256,7 +269,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={butter}
                                             alt="food"
@@ -269,7 +282,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={milk_tea}
                                             alt="food"
@@ -305,7 +318,7 @@ function TuesdayContent() {
                         <div className="menu_sub_part_div3">
                             <font className='font_menu_description'>
                                 <div className="food_one_by_one">
-                                    <div>Jeera Rice</div>
+                                    <div>Rice</div>
                                     <div>Roti</div>
                                     <div>Dal</div>
                                     <div>Mix Boiled Veg</div>
@@ -343,20 +356,20 @@ function TuesdayContent() {
                                     </div>
                                 </div>
                                 <div className="food_images_parent">
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
-                                            src={rice_jeera}
+                                            src={rice}
                                             alt="food"
                                             className='food_image_image'
                                             loading="lazy"
                                         />
                                         <div className="food_name_div">
                                             <font className='font_menu_description_over'>
-                                                Jeera Rice
+                                                Rice
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={roti}
                                             alt="food"
@@ -369,7 +382,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={dal}
                                             alt="food"
@@ -382,7 +395,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={boil_v}
                                             alt="food"
@@ -395,7 +408,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={kadai_veg}
                                             alt="food"
@@ -408,7 +421,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={alu_chokha}
                                             alt="food"
@@ -421,7 +434,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={dahai_bundi}
                                             alt="food"
@@ -490,7 +503,7 @@ function TuesdayContent() {
                                     </div>
                                 </div>
                                 <div className="food_images_parent">
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={red_p}
                                             alt="food"
@@ -503,7 +516,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={chuda}
                                             alt="food"
@@ -516,7 +529,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={milk_tea}
                                             alt="food"
@@ -554,7 +567,7 @@ function TuesdayContent() {
                                 <div className="food_one_by_one">
                                     <div>Rice</div>
                                     <div>Roti</div>
-                                    <div>Dal Fry</div>
+                                    <div>Dal</div>
                                     <div>Mix Boiled Veg</div>
                                     <div>Soyabean Alu Masala</div>
                                     <div>Crispy Veg Chips</div>
@@ -590,7 +603,7 @@ function TuesdayContent() {
                                     </div>
                                 </div>
                                 <div className="food_images_parent">
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={rice}
                                             alt="food"
@@ -603,7 +616,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={roti}
                                             alt="food"
@@ -616,20 +629,20 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
-                                            src={dal_f}
+                                            src={dal}
                                             alt="food"
                                             className='food_image_image'
                                             loading="lazy"
                                         />
                                         <div className="food_name_div">
                                             <font className='font_menu_description_over'>
-                                                Dal Fry
+                                                Dal
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={boil_v}
                                             alt="food"
@@ -642,7 +655,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={soya}
                                             alt="food"
@@ -655,7 +668,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={veg_chips}
                                             alt="food"
@@ -668,7 +681,7 @@ function TuesdayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={semai}
                                             alt="food"

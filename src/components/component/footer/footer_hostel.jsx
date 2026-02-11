@@ -46,9 +46,9 @@ function FooterHostel() {
                             <font className='footer_item_font'>
                                 Update
                             </font>
-                            <div className="update_notice">
+                            {/* <div className="update_notice">
                                 <span style={{ fontSize: "13px" }}>&#11044;</span>
-                            </div>
+                            </div> */}
                         </center>
                     </div>
                 </Link>

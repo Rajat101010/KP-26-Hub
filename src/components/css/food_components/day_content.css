@@ -176,12 +176,10 @@
     margin: 1rem 0rem;
     justify-content: center;
     gap: 15px;
-    /* background-color: yellowgreen; */
 }
 
 .food_images_parent div {
     width: 100%;
-    /* background-color: violet; */
 }
 
 
@@ -192,8 +190,25 @@
     }
 }
 
+/* .food_images_individual {
+    width: 10rem;
+    height: 8rem;
+    background-color: yellowgreen;
+} */
+
 .food_image_image {
     width: 100%;
+    animation: fadeIn .5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .food_name_div {
@@ -273,7 +288,7 @@
 
 .menu_menu_only {
     /* width: 100%; */
-    background-image:   
+    background-image:
         linear-gradient(rgba(0, 0, 0.1, 0.86),
             rgba(0.7, 0.7, 0.7, 0.8)),
         url("../../../assets/backgroung_img.webp");
@@ -282,7 +297,7 @@
     background-position: center top;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .menu_menu_only {
         background-image:
             linear-gradient(rgba(0, 0, 0.1, 0.82),

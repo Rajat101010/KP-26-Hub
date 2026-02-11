@@ -10,7 +10,6 @@ import { LiaCookieSolid } from "react-icons/lia";
 import { ImSpoonKnife } from "react-icons/im";
 
 import veg_c from '../../../../assets/food_images/veg_c.webp';
-import egg_c from '../../../../assets/food_images/egg_c.webp';
 import corn_flakes from '../../../../assets/food_images/corn_flakes.webp';
 import milk from '../../../../assets/food_images/milk.webp';
 import banana from '../../../../assets/food_images/banana.webp';
@@ -171,7 +170,6 @@ function FridayContent() {
                             <font className='font_menu_description'>
                                 <div className="food_one_by_one">
                                     <div>Veg Chowmein</div>
-                                    <div>Egg Chowmein</div>
                                     <div>Corn Flakes</div>
                                     <div>Milk</div>
                                     <div>Banana</div>
@@ -207,7 +205,7 @@ function FridayContent() {
                                     </div>
                                 </div>
                                 <div className="food_images_parent">
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={veg_c}
                                             alt="food"
@@ -220,20 +218,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
-                                        <img
-                                            src={egg_c}
-                                            alt="food"
-                                            className='food_image_image'
-                                            loading="lazy"
-                                        />
-                                        <div className="food_name_div">
-                                            <font className='font_menu_description_over'>
-                                                Egg Chowmein
-                                            </font>
-                                        </div>
-                                    </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={corn_flakes}
                                             alt="food"
@@ -246,7 +231,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={milk}
                                             alt="food"
@@ -259,7 +244,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={banana}
                                             alt="food"
@@ -272,7 +257,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={milk_tea}
                                             alt="food"
@@ -347,7 +332,7 @@ function FridayContent() {
                                     </div>
                                 </div>
                                 <div className="food_images_parent">
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={rice}
                                             alt="food"
@@ -360,7 +345,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={roti}
                                             alt="food"
@@ -373,7 +358,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={dal}
                                             alt="food"
@@ -386,7 +371,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={boil_v}
                                             alt="food"
@@ -399,7 +384,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={fish_masala}
                                             alt="food"
@@ -412,7 +397,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={besan_alu_masala}
                                             alt="food"
@@ -425,7 +410,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={bhaji}
                                             alt="food"
@@ -438,7 +423,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={frimes}
                                             alt="food"
@@ -507,7 +492,7 @@ function FridayContent() {
                                     </div>
                                 </div>
                                 <div className="food_images_parent">
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={chicken_s}
                                             alt="food"
@@ -520,7 +505,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={veg_s}
                                             alt="food"
@@ -592,7 +577,7 @@ function FridayContent() {
                                     </div>
                                 </div>
                                 <div className="food_images_parent">
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={biryani_c}
                                             alt="food"
@@ -605,7 +590,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={biryani_v}
                                             alt="food"
@@ -618,7 +603,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={sahi_paneer}
                                             alt="food"
@@ -631,7 +616,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={raita}
                                             alt="food"
@@ -644,7 +629,7 @@ function FridayContent() {
                                             </font>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="food_images_individual">
                                         <img
                                             src={jj}
                                             alt="food"
